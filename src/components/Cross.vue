@@ -89,7 +89,7 @@ $blue: #5f76b5;
     right: 30% !important;
     top: 0% !important;
   }
-  #cross4, #cross5, #cross6 {
+  #cross4, #cross5, #cross6, #cross7, #cross8 {
     display: none;
   }
 }
@@ -133,7 +133,7 @@ $blue: #5f76b5;
     right: 30% !important;
     top: 0% !important;
   }
-  #cross4, #cross5, #cross6 {
+  #cross4, #cross5, #cross6, #cross7, #cross8 {
     display: none;
   }
 }

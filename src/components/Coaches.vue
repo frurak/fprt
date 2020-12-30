@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 <template>
   <div class="coaches_container">
     <div class="coaches_header">
@@ -62,5 +63,99 @@ $blue: #5f76b5;
       font-weight: 200;
     }
   }
+}
+
+// ------------------------------------------------------- MEDIA QUERIES -------------------------------------------------------
+
+@media only screen and (max-width: 413px) {
+  .coaches_container {
+    width: 100%;
+    height: 320vh;
+    position: relative;
+    @include flex(center, flex-start);
+    flex-direction: column;
+    .coaches_header {
+      height: 20%;
+      padding: 0 5.5vw;
+      @include flex(center, center);
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 10vh;
+      .coaches_headline {
+        font-size: 2.2rem;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 400;
+        line-height: 2.55rem;
+      }
+      .coaches_description {
+        font-size: 1rem;
+        line-height: 1.7rem;
+        margin-top: 1.3rem;
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 575px) {
+  .coaches_container {
+    width: 100%;
+    height: 320vh;
+    position: relative;
+    @include flex(center, flex-start);
+    flex-direction: column;
+    .coaches_header {
+      height: 20%;
+      padding: 0 5.5vw;
+      @include flex(center, center);
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 10vh;
+      .coaches_headline {
+        font-size: 2.4rem;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 400;
+        line-height: 2.78rem;
+      }
+      .coaches_description {
+        font-size: 1rem;
+        line-height: 1.7rem;
+        margin-top: 1.3rem;
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+//iPhone 5, 5S, 5C, 5SE LANDSCAPE
+@media screen and (min-width: 414px) and (max-width: 575px) and (orientation: landscape) {
+  
+}
+
+//iPhone 6, 6S, 7, 8, X LANDSCAPE
+@media screen and (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+  
+}
+
+//iPhone X LANDSCAPE
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+  
+}
+
+//iPad LANDSCAPE
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) and (orientation: landscape) {
+  
 }
 </style>
