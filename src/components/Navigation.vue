@@ -62,6 +62,9 @@ $blue: #5f76b5;
   width: 100vw;
   height: 100vh;
   z-index: 12;
+  position: absolute;
+  top: 0;
+  right: 0;
   .nav_bg_blur {
     position: fixed;
     top: 0;
@@ -69,9 +72,7 @@ $blue: #5f76b5;
     width: 100vw;
     height: 100vh;
     z-index: 99;
-    background: rgba(138, 138, 138, 0.2);
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+    background: rgba(24, 23, 23, 0.88);
     display: none;
     opacity: 0;
   }

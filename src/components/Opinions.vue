@@ -1,29 +1,21 @@
 <template>
-  <div class="about_container">
-    <div class="about_header">
-      <h3 class="about_headline">
-        Tam gdzie jest pasja,
-        <br />
-        przychodzą wyniki
+  <div class="opinions_container">
+    <div class="opinions_header">
+      <h3 class="opinions_headline">
+        Co o nas mówią nasi zawodnicy
       </h3>
     </div>
-    <AboutBoxes />
-    <Cross style="right:50%;top:5%;" id="cross3" />
-    <Cross style="right:6%;top:19%;" id="cross4" />
-    <Cross style="right:28%;top:28%;" id="cross5" />
-    <Cross style="right:68.5%;bottom:5.5%;" id="cross6" />
+    <OpinionsSingle />
   </div>
 </template>
 
 <script>
-import AboutBoxes from "@/components/AboutBoxes.vue";
-import Cross from "@/components/Cross.vue";
+import OpinionsSingle from "@/components/OpinionsSingle.vue";
 
 export default {
-  name: "AboutTeam",
+  name: "Opinions",
   components: {
-    AboutBoxes,
-    Cross
+    OpinionsSingle
   }
 };
 </script>
@@ -38,19 +30,17 @@ $blue: #5f76b5;
   justify-content: $ju;
 }
 
-.about_container {
+.opinions_container {
   width: 100%;
-  min-height: 140vh;
-  height: auto;
+  min-height: 100vh;
   @include flex(center, flex-start);
   flex-direction: column;
-  position: relative;
-  .about_header {
+  .opinions_header {
+    @include flex(center, center);
     width: 100%;
     height: 30%;
-    padding: 5rem 5.5vw;
-    @include flex(center, flex-start);
-    .about_headline {
+    padding: 8rem 5.5vw 5rem 5.5vw;
+    .opinions_headline {
       font-size: 4.3rem;
       font-family: "Red Hat Display", sans-serif;
       font-weight: 400;
@@ -62,116 +52,120 @@ $blue: #5f76b5;
 // ------------------------------------------------------- MEDIA QUERIES -------------------------------------------------------
 
 @media only screen and (max-width: 413px) {
-  .about_container {
+  .opinions_container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
     height: auto;
     @include flex(center, flex-start);
     flex-direction: column;
-    margin-top: 0vh;
-    position: relative;
-    .about_header {
+    padding: 0 4vw;
+    .opinions_header {
+      @include flex(center, center);
       width: 100%;
       height: 30%;
-      padding: 5rem 4vw;
-      @include flex(center, flex-start);
-      .about_headline {
+      padding: 5rem 0;
+      .opinions_headline {
         font-size: 2.2rem;
         font-family: "Red Hat Display", sans-serif;
         font-weight: 400;
         line-height: 2.55rem;
+        text-align: center;
       }
     }
   }
 }
 
 @media screen and (min-width: 414px) and (max-width: 575px) {
-  .about_container {
+  .opinions_container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
     height: auto;
     @include flex(center, flex-start);
     flex-direction: column;
-    position: relative;
-    .about_header {
+    padding: 0 4vw;
+    .opinions_header {
+      @include flex(center, center);
       width: 100%;
       height: 30%;
-      padding: 8vh 4vw;
-      @include flex(center, flex-start);
-      .about_headline {
+      padding: 5rem 0;
+      .opinions_headline {
         font-size: 2.4rem;
         font-family: "Red Hat Display", sans-serif;
         font-weight: 400;
         line-height: 2.78rem;
+        text-align: center;
       }
     }
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .about_container {
+  .opinions_container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
     height: auto;
     @include flex(center, flex-start);
     flex-direction: column;
-    position: relative;
-    .about_header {
+    padding: 0 4vw;
+    .opinions_header {
+      @include flex(center, center);
       width: 100%;
       height: 30%;
-      padding: 8vh 4vw;
-      @include flex(center, flex-start);
-      .about_headline {
+      padding: 5rem 0;
+      .opinions_headline {
         font-size: 2.4rem;
         font-family: "Red Hat Display", sans-serif;
         font-weight: 400;
         line-height: 2.78rem;
+        text-align: center;
       }
     }
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .about_container {
+  .opinions_container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     height: auto;
     @include flex(center, flex-start);
     flex-direction: column;
-    position: relative;
-    .about_header {
+    padding: 0 4vw;
+    .opinions_header {
+      @include flex(center, center);
       width: 100%;
       height: 30%;
-      padding: 8vh 4vw;
-      @include flex(center, flex-start);
-      .about_headline {
+      padding: 5rem 0;
+      .opinions_headline {
         font-size: 2.4rem;
         font-family: "Red Hat Display", sans-serif;
         font-weight: 400;
         line-height: 2.78rem;
+        text-align: center;
       }
     }
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .about_container {
+  .opinions_container {
     width: 100%;
-    min-height: 90vh;
+    min-height: 55vh;
     height: auto;
     @include flex(center, flex-start);
     flex-direction: column;
-    position: relative;
-    .about_header {
+    padding: 0 4vw;
+    .opinions_header {
+      @include flex(center, center);
       width: 100%;
       height: 30%;
-      padding: 8vh 4vw;
-      @include flex(center, flex-start);
-      .about_headline {
+      padding: 5rem 0;
+      .opinions_headline {
         font-size: 3rem;
         font-family: "Red Hat Display", sans-serif;
         font-weight: 400;
         line-height: 3.48rem;
+        text-align: center;
       }
     }
   }
@@ -179,24 +173,24 @@ $blue: #5f76b5;
 
 //iPhone 5, 5S, 5C, 5SE LANDSCAPE
 @media screen and (min-width: 414px) and (max-width: 575px) and (orientation: landscape) {
-  .about_container {
+  .opinions_container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
     height: auto;
     @include flex(center, flex-start);
     flex-direction: column;
-    margin-top: 0vh;
-    position: relative;
-    .about_header {
+    padding: 0 4vw;
+    .opinions_header {
+      @include flex(center, center);
       width: 100%;
       height: 30%;
-      padding: 5rem 4vw;
-      @include flex(center, flex-start);
-      .about_headline {
+      padding: 5rem 0;
+      .opinions_headline {
         font-size: 2.2rem;
         font-family: "Red Hat Display", sans-serif;
         font-weight: 400;
         line-height: 2.55rem;
+        text-align: center;
       }
     }
   }
@@ -204,24 +198,24 @@ $blue: #5f76b5;
 
 //iPhone 6, 6S, 7, 8, X LANDSCAPE
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
-  .about_container {
+  .opinions_container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
     height: auto;
     @include flex(center, flex-start);
     flex-direction: column;
-    margin-top: 0vh;
-    position: relative;
-    .about_header {
+    padding: 0 4vw;
+    .opinions_header {
+      @include flex(center, center);
       width: 100%;
       height: 30%;
-      padding: 5rem 4vw;
-      @include flex(center, flex-start);
-      .about_headline {
+      padding: 5rem 0;
+      .opinions_headline {
         font-size: 2.4rem;
         font-family: "Red Hat Display", sans-serif;
         font-weight: 400;
         line-height: 2.78rem;
+        text-align: center;
       }
     }
   }
@@ -229,24 +223,25 @@ $blue: #5f76b5;
 
 //iPhone X LANDSCAPE
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
-  .about_container {
+  .opinions_container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 200vh;
     height: auto;
     @include flex(center, flex-start);
     flex-direction: column;
-    margin-top: 0vh;
-    position: relative;
-    .about_header {
+    padding: 0 4vw;
+    // background: red;
+    .opinions_header {
+      @include flex(center, center);
       width: 100%;
       height: 30%;
-      padding: 5rem 4vw;
-      @include flex(center, flex-start);
-      .about_headline {
+      padding: 60px 0 80px 0;
+      .opinions_headline {
         font-size: 2.4rem;
         font-family: "Red Hat Display", sans-serif;
         font-weight: 400;
         line-height: 2.78rem;
+        text-align: center;
       }
     }
   }
@@ -254,24 +249,24 @@ $blue: #5f76b5;
 
 //iPad LANDSCAPE
 @media only screen and (min-device-width: 992px) and (max-device-width: 1199px) and (orientation: landscape) {
-  .about_container {
+  .opinions_container {
     width: 100%;
-    min-height: 120vh;
+    min-height: 100vh;
     height: auto;
     @include flex(center, flex-start);
     flex-direction: column;
-    margin-top: 0vh;
-    position: relative;
-    .about_header {
+    padding: 0 4vw;
+    .opinions_header {
+      @include flex(center, center);
       width: 100%;
       height: 30%;
-      padding: 5rem 4vw;
-      @include flex(center, flex-start);
-      .about_headline {
+      padding: 5rem 0;
+      .opinions_headline {
         font-size: 2.4rem;
         font-family: "Red Hat Display", sans-serif;
         font-weight: 400;
         line-height: 2.78rem;
+        text-align: center;
       }
     }
   }

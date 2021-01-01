@@ -77,12 +77,11 @@ $blue: #5f76b5;
   min-height: 70%;
   @include flex(flex-start, space-between);
   padding: 0 7vw;
-  margin-top: 100px;
   .knowledge_box {
     min-height: 70%;
     height: auto;
     width: 30%;
-    margin-top: 12vh;
+    margin-top: 10vh;
     @include flex(flex-start, flex-start);
     flex-direction: column;
   }
@@ -97,7 +96,7 @@ $blue: #5f76b5;
     min-height: 70%;
     height: auto;
     width: 30%;
-    margin-top: 24vh;
+    margin-top: 20vh;
     @include flex(flex-start, flex-start);
     flex-direction: column;
   }
@@ -176,7 +175,7 @@ $blue: #5f76b5;
       margin-top: 0vh;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 20vh;
+      margin-bottom: 10vh;
     }
     .people_box {
       min-height: 70%;
@@ -184,7 +183,7 @@ $blue: #5f76b5;
       width: 100%;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 20vh;
+      margin-bottom: 10vh;
     }
     .experience_box {
       min-height: 70%;
@@ -193,7 +192,7 @@ $blue: #5f76b5;
       margin-top: 0vh;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 20vh;
+      margin-bottom: 10vh;
     }
     .box_image_overlay {
       width: 100%;
@@ -269,7 +268,7 @@ $blue: #5f76b5;
       margin-top: 0vh;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 20vh;
+      margin-bottom: 10vh;
     }
     .people_box {
       min-height: 70%;
@@ -277,7 +276,7 @@ $blue: #5f76b5;
       width: 100%;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 20vh;
+      margin-bottom: 10vh;
     }
     .experience_box {
       min-height: 70%;
@@ -286,7 +285,7 @@ $blue: #5f76b5;
       margin-top: 0vh;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 20vh;
+      margin-bottom: 10vh;
     }
     .box_image_overlay {
       width: 100%;
@@ -362,7 +361,7 @@ $blue: #5f76b5;
       margin-top: 0vh;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 20vh;
+      margin-bottom: 10vh;
     }
     .people_box {
       min-height: 70%;
@@ -370,7 +369,7 @@ $blue: #5f76b5;
       width: 100%;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 20vh;
+      margin-bottom: 10vh;
     }
     .experience_box {
       min-height: 70%;
@@ -379,7 +378,7 @@ $blue: #5f76b5;
       margin-top: 0vh;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 20vh;
+      margin-bottom: 10vh;
     }
     .box_image_overlay {
       width: 100%;
@@ -455,7 +454,7 @@ $blue: #5f76b5;
       margin-top: 0vh;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 15vh;
+      margin-bottom: 10vh;
     }
     .people_box {
       min-height: 70%;
@@ -463,7 +462,7 @@ $blue: #5f76b5;
       width: 100%;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 15vh;
+      margin-bottom: 10vh;
     }
     .experience_box {
       min-height: 70%;
@@ -472,17 +471,107 @@ $blue: #5f76b5;
       margin-top: 0vh;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 15vh;
+      margin-bottom: 10vh;
     }
     .box_image_overlay {
       width: 100%;
-      min-height: 300px;
+      min-height: 350px;
       border-radius: 20px;
       overflow: hidden;
       @include flex(center, center);
       position: relative;
       img {
         min-height: 300px;
+        height: 350px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .img_fg {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 20;
+        background: linear-gradient(
+          0deg,
+          rgba(34, 40, 64, 1),
+          rgba(39, 40, 43, 0) 85%
+        );
+      }
+      .knowledge_img {
+        width: 100%;
+        transform: translateX(5%);
+      }
+      .people_img {
+        width: 100%;
+      }
+      .experience_img {
+        width: 100%;
+      }
+      .img_txt {
+        position: absolute;
+        left: 4vw;
+        bottom: 4%;
+        z-index: 30;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+    }
+    .box_description {
+      padding: 6% 4vw;
+      font-size: 1rem;
+      line-height: 1.7rem;
+    }
+    .box_btn {
+      margin-top: 0;
+      margin-left: 4vw;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .about_boxes_container {
+    width: 100%;
+    min-height: 70%;
+    @include flex(flex-start, space-between);
+    padding: 0 4vw;
+    margin-top: 0;
+    .knowledge_box {
+      min-height: 70%;
+      height: auto;
+      width: 30%;
+      margin-top: 6vh;
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+    }
+    .people_box {
+      min-height: 70%;
+      height: auto;
+      width: 30%;
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+    }
+    .experience_box {
+      min-height: 70%;
+      height: auto;
+      width: 30%;
+      margin-top: 12vh;
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+    }
+    .box_image_overlay {
+      width: 100%;
+      min-height: 400px;
+      border-radius: 12px;
+      overflow: hidden;
+      @include flex(center, center);
+      position: relative;
+      img {
+        min-height: 400px;
         object-fit: cover;
         object-position: center;
       }
@@ -511,117 +600,24 @@ $blue: #5f76b5;
       }
       .img_txt {
         position: absolute;
-        left: 4vw;
-        bottom: 4%;
+        left: 8%;
+        bottom: 8%;
         z-index: 30;
         text-transform: uppercase;
         letter-spacing: 5px;
         font-family: "Red Hat Display", sans-serif;
         font-weight: 400;
-        font-size: 2.4rem;
+        font-size: 1rem;
       }
     }
     .box_description {
-      padding: 6% 4vw;
+      padding: 12% 8%;
       font-size: 1rem;
       line-height: 1.7rem;
     }
     .box_btn {
       margin-top: 0;
-      margin-left: 4vw;
-    }
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .about_boxes_container {
-    width: 100%;
-    min-height: 70%;
-    @include flex(flex-start, space-between);
-    flex-direction: column;
-    padding: 0;
-    margin-top: 0px;
-    .knowledge_box {
-      min-height: 70%;
-      height: auto;
-      width: 100%;
-      margin-top: 0vh;
-      @include flex(flex-start, flex-start);
-      flex-direction: column;
-      margin-bottom: 15vh;
-    }
-    .people_box {
-      min-height: 70%;
-      height: auto;
-      width: 100%;
-      @include flex(flex-start, flex-start);
-      flex-direction: column;
-      margin-bottom: 15vh;
-    }
-    .experience_box {
-      min-height: 70%;
-      height: auto;
-      width: 100%;
-      margin-top: 0vh;
-      @include flex(flex-start, flex-start);
-      flex-direction: column;
-      margin-bottom: 15vh;
-    }
-    .box_image_overlay {
-      width: 100%;
-      min-height: 200px;
-      border-radius: 20px;
-      overflow: hidden;
-      @include flex(center, center);
-      position: relative;
-      img {
-        min-height: 200px;
-        object-fit: cover;
-        object-position: center;
-      }
-      .img_fg {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 20;
-        background: linear-gradient(
-          0deg,
-          rgba(34, 40, 64, 1),
-          rgba(39, 40, 43, 0) 85%
-        );
-      }
-      .knowledge_img {
-        width: 100%;
-        transform: translateX(5%);
-      }
-      .people_img {
-        width: 100%;
-      }
-      .experience_img {
-        width: 100%;
-      }
-      .img_txt {
-        position: absolute;
-        left: 4vw;
-        bottom: 4%;
-        z-index: 30;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        font-family: "Red Hat Display", sans-serif;
-        font-weight: 400;
-        font-size: 3rem;
-      }
-    }
-    .box_description {
-      padding: 6% 4vw;
-      font-size: 1.2rem;
-      line-height: 2.04rem;
-    }
-    .box_btn {
-      margin-top: 0;
-      margin-left: 4vw;
+      margin-left: 8%;
     }
   }
 }
@@ -914,39 +910,36 @@ $blue: #5f76b5;
     width: 100%;
     min-height: 70%;
     @include flex(flex-start, space-between);
-    flex-direction: column;
-    padding: 0;
-    margin-top: 0px;
+    flex-direction: row;
+    padding: 0 4vw;
+    margin-top: 0;
     .knowledge_box {
       min-height: 70%;
       height: auto;
-      width: 100%;
-      margin-top: 0vh;
+      width: 30%;
+      margin-top: 6vh;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 20vh;
     }
     .people_box {
       min-height: 70%;
       height: auto;
-      width: 100%;
+      width: 30%;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 20vh;
     }
     .experience_box {
       min-height: 70%;
       height: auto;
-      width: 100%;
-      margin-top: 0vh;
+      width: 30%;
+      margin-top: 12vh;
       @include flex(flex-start, flex-start);
       flex-direction: column;
-      margin-bottom: 20vh;
     }
     .box_image_overlay {
       width: 100%;
       min-height: 300px;
-      border-radius: 20px;
+      border-radius: 12px;
       overflow: hidden;
       @include flex(center, center);
       position: relative;
@@ -969,18 +962,18 @@ $blue: #5f76b5;
         );
       }
       .knowledge_img {
-        width: 100%;
+        width: 170%;
         transform: translateX(5%);
       }
       .people_img {
-        width: 100%;
+        width: 160%;
       }
       .experience_img {
-        width: 100%;
+        width: 160%;
       }
       .img_txt {
         position: absolute;
-        left: 4vw;
+        left: 8%;
         bottom: 8%;
         z-index: 30;
         text-transform: uppercase;
@@ -991,13 +984,13 @@ $blue: #5f76b5;
       }
     }
     .box_description {
-      padding: 4% 4vw;
+      padding: 12% 8%;
       font-size: 1rem;
       line-height: 1.7rem;
     }
     .box_btn {
       margin-top: 0;
-      margin-left: 4vw;
+      margin-left: 8%;
     }
   }
 }

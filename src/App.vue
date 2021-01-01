@@ -10,6 +10,9 @@
     <Navigation />
     <AboutTeam />
     <Coaches />
+    <Opinions />
+    <Schedule />
+    <Footer />
     <router-view />
   </div>
 </template>
@@ -21,6 +24,9 @@ import Cross from "@/components/Cross.vue";
 import Navigation from "@/components/Navigation.vue";
 import AboutTeam from "@/components/AboutTeam.vue";
 import Coaches from "@/components/Coaches.vue";
+import Opinions from "@/components/Opinions.vue";
+import Schedule from "@/components/Schedule.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   components: {
@@ -29,7 +35,10 @@ export default {
     Cross,
     Navigation,
     AboutTeam,
-    Coaches
+    Coaches,
+    Opinions,
+    Schedule,
+    Footer
   }
 };
 </script>
@@ -64,16 +73,13 @@ body {
 #app {
   overflow-x: hidden;
   .homepage_banner {
-    width: 57vw;
+    width: 66vw;
     height: auto;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translateX(76%);
+    transform: translateX(56%);
     z-index: -1;
     overflow: hidden;
     img {
-      height: 131vh;
+      height: 121vh;
     }
   }
 }
@@ -84,17 +90,14 @@ body {
   #app {
     .homepage_banner {
       width: 100vw;
-      height: auto;
-      position: absolute;
-      left: 0;
-      top: 0;
+      height: 100vh;
       transform: translateX(0%);
       z-index: -1;
       overflow: hidden;
       img {
-        width: 300%;
-        height: auto;
-        transform: translateX(-15%) translateY(-15%);
+        width: auto;
+        height: 100%;
+        transform: translateX(-15%);
       }
     }
   }
@@ -104,17 +107,14 @@ body {
   #app {
     .homepage_banner {
       width: 100vw;
-      height: auto;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translateX(0%) translateY(-15%);
+      height: 100vh;
+      transform: translateX(0%);
       z-index: -1;
       overflow: hidden;
       img {
-        width: 300%;
-        height: auto;
-        transform: translateX(-19%);
+        width: auto;
+        height: 100%;
+        transform: translateX(-15%);
       }
     }
   }
@@ -124,17 +124,14 @@ body {
   #app {
     .homepage_banner {
       width: 100vw;
-      height: auto;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translateX(0%) translateY(-15%);
+      height: 100vh;
+      transform: translateX(0%);
       z-index: -1;
       overflow: hidden;
       img {
-        width: 300%;
-        height: auto;
-        transform: translateX(-19%);
+        width: auto;
+        height: 100%;
+        transform: translateX(-15%);
       }
     }
   }
@@ -144,17 +141,14 @@ body {
   #app {
     .homepage_banner {
       width: 100vw;
-      height: auto;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translateX(0%) translateY(-20%);
+      height: 100vh;
+      transform: translateX(0%);
       z-index: -1;
       overflow: hidden;
       img {
-        width: 260%;
-        height: auto;
-        transform: translateX(-19%);
+        width: auto;
+        height: 100%;
+        transform: translateX(-15%);
       }
     }
   }
@@ -164,17 +158,14 @@ body {
   #app {
     .homepage_banner {
       width: 100vw;
-      height: auto;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translateX(0%) translateY(-20%);
+      height: 100vh;
+      transform: translateX(0%);
       z-index: -1;
       overflow: hidden;
       img {
-        width: 260%;
-        height: auto;
-        transform: translateX(-19%);
+        width: auto;
+        height: 100%;
+        transform: translateX(-15%);
       }
     }
   }
@@ -185,16 +176,15 @@ body {
   #app {
     .homepage_banner {
       width: 100vw;
-      height: auto;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translateX(0%) translateY(-20%);
+      height: 150vh;
+      transform: translateX(0%);
       z-index: -1;
+      overflow: hidden;
+      background: red;
       img {
-        width: 150%;
-        height: auto;
-        transform: translateX(0%);
+        width: auto;
+        height: 100%;
+        transform: translateX(-15%);
       }
     }
   }
@@ -205,16 +195,15 @@ body {
   #app {
     .homepage_banner {
       width: 100vw;
-      height: auto;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translateX(0%) translateY(-20%);
+      height: 150vh;
+      transform: translateX(0%);
       z-index: -1;
+      overflow: hidden;
+      background: red;
       img {
-        width: 150%;
-        height: auto;
-        transform: translateX(0%);
+        width: auto;
+        height: 120%;
+        transform: translateX(-15%) translateY(-10%);
       }
     }
   }
@@ -225,16 +214,15 @@ body {
   #app {
     .homepage_banner {
       width: 100vw;
-      height: auto;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translateX(0%) translateY(-25%);
+      height: 150vh;
+      transform: translateX(0%);
       z-index: -1;
+      overflow: hidden;
+      background: red;
       img {
-        width: 130%;
-        height: auto;
-        transform: translateX(0%);
+        width: auto;
+        height: 100%;
+        transform: translateX(0);
       }
     }
   }
@@ -245,16 +233,15 @@ body {
   #app {
     .homepage_banner {
       width: 100vw;
-      height: auto;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translateX(0%) translateY(-18%);
+      height: 100vh;
+      transform: translateX(0%);
       z-index: -1;
+      overflow: hidden;
+      background: red;
       img {
-        width: 180%;
-        height: auto;
-        transform: translateX(0%);
+        width: auto;
+        height: 100%;
+        transform: translateX(0);
       }
     }
   }

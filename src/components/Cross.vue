@@ -87,9 +87,13 @@ $blue: #5f76b5;
   }
   #cross3 {
     right: 30% !important;
-    top: 0% !important;
+    top: 1.5% !important;
   }
-  #cross4, #cross5, #cross6, #cross7, #cross8 {
+  #cross4,
+  #cross5,
+  #cross6,
+  #cross7,
+  #cross8 {
     display: none;
   }
 }
@@ -131,9 +135,13 @@ $blue: #5f76b5;
   }
   #cross3 {
     right: 30% !important;
-    top: 0% !important;
+    top: 1% !important;
   }
-  #cross4, #cross5, #cross6, #cross7, #cross8 {
+  #cross4,
+  #cross5,
+  #cross6,
+  #cross7,
+  #cross8 {
     display: none;
   }
 }
@@ -175,9 +183,16 @@ $blue: #5f76b5;
   }
   #cross3 {
     right: 30% !important;
-    top: 0% !important;
+    top: 1% !important;
   }
-  #cross4, #cross5, #cross6 {
+  #cross4 {
+    right: 10% !important;
+    top: 3% !important;
+  }
+  #cross5,
+  #cross6,
+  #cross7,
+  #cross8 {
     display: none;
   }
 }
@@ -219,13 +234,16 @@ $blue: #5f76b5;
   }
   #cross3 {
     right: 30% !important;
-    top: 0% !important;
+    top: 1% !important;
   }
   #cross4 {
-    right: 8% !important;
+    right: 10% !important;
     top: 3% !important;
   }
-  #cross5, #cross6 {
+  #cross5,
+  #cross6,
+  #cross7,
+  #cross8 {
     display: none;
   }
 }
@@ -267,14 +285,23 @@ $blue: #5f76b5;
   }
   #cross3 {
     right: 30% !important;
-    top: 0% !important;
-  }
-  #cross4 {
-    right: 8% !important;
     top: 3% !important;
   }
-  #cross5, #cross6 {
+  #cross4 {
+    right: 10% !important;
+    top: 10% !important;
+  }
+  #cross5,
+  #cross6 {
     display: none;
+  }
+  #cross7 {
+    right: 30% !important;
+    top: 0 !important;
+  }
+  #cross8 {
+    right: 10% !important;
+    top: 10% !important;
   }
 }
 
@@ -308,17 +335,21 @@ $blue: #5f76b5;
   }
   #cross1 {
     right: 58% !important;
-    top: 12% !important;
+    top: 7% !important;
   }
   #cross2 {
-    right: 33% !important;
+    right: 43% !important;
     top: 18% !important;
   }
   #cross3 {
     right: 30% !important;
-    top: 0% !important;
+    top: 2% !important;
   }
-  #cross4, #cross5, #cross6 {
+  #cross4,
+  #cross5,
+  #cross6,
+  #cross7,
+  #cross8 {
     display: none;
   }
 }
@@ -353,17 +384,21 @@ $blue: #5f76b5;
   }
   #cross1 {
     right: 58% !important;
-    top: 12% !important;
+    top: 7% !important;
   }
   #cross2 {
-    right: 33% !important;
+    right: 43% !important;
     top: 18% !important;
   }
   #cross3 {
     right: 30% !important;
-    top: 1% !important;
+    top: 2% !important;
   }
-  #cross4, #cross5, #cross6 {
+  #cross4,
+  #cross5,
+  #cross6,
+  #cross7,
+  #cross8 {
     display: none;
   }
 }
@@ -398,21 +433,23 @@ $blue: #5f76b5;
   }
   #cross1 {
     right: 58% !important;
-    top: 12% !important;
+    top: 7% !important;
   }
   #cross2 {
-    right: 33% !important;
+    right: 43% !important;
     top: 18% !important;
   }
   #cross3 {
     right: 30% !important;
-    top: 1% !important;
+    top: 2% !important;
   }
   #cross4 {
     right: 8% !important;
     top: 3% !important;
   }
-  #cross5, #cross6 {
+  #cross4,
+  #cross5,
+  #cross6 {
     display: none;
   }
 }
@@ -453,12 +490,27 @@ $blue: #5f76b5;
     right: 33% !important;
     top: 18% !important;
   }
+  #cross3 {
+    right: 30% !important;
+    top: 5% !important;
+  }
   #cross4 {
     right: 8% !important;
-    top: 3% !important;
+    top: 12% !important;
   }
-  #cross5, #cross6 {
+  #cross5 {
     display: none;
+  }
+  #cross6 {
+    display: none;
+  }
+  #cross7 {
+    top: 4% !important;
+    right: 35% !important;
+  }
+  #cross8 {
+    top: 12% !important;
+    right: 15% !important;
   }
 }
 </style>

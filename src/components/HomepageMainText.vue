@@ -54,6 +54,7 @@ $blue: #5f76b5;
   top: 40%;
   width: auto;
   min-height: 20%;
+  z-index: 5;
   .hp_maintext {
     font-size: 4.3rem;
     font-family: "Red Hat Display", sans-serif;
@@ -74,7 +75,7 @@ $blue: #5f76b5;
   .hp_maintext_container {
     position: absolute;
     left: 0;
-    top: 28%;
+    top: 30%;
     width: auto;
     min-height: 20%;
     margin: 0 4vw;
@@ -127,7 +128,7 @@ $blue: #5f76b5;
   .hp_maintext_container {
     position: absolute;
     left: 0;
-    top: 35%;
+    top: 30%;
     width: auto;
     min-height: 20%;
     margin: 0 4vw;
@@ -154,7 +155,7 @@ $blue: #5f76b5;
   .hp_maintext_container {
     position: absolute;
     left: 0;
-    top: 45%;
+    top: 55%;
     width: auto;
     min-height: 20%;
     margin: 0 4vw;
@@ -236,7 +237,7 @@ $blue: #5f76b5;
   .hp_maintext_container {
     position: absolute;
     left: 0;
-    top: 34%;
+    top: 46%;
     width: auto;
     min-height: 20%;
     margin: 0 4vw;
@@ -295,10 +296,10 @@ $blue: #5f76b5;
     min-height: 20%;
     margin: 0 4vw;
     .hp_maintext {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-family: "Red Hat Display", sans-serif;
       font-weight: 400;
-      line-height: 2.55rem;
+      line-height: 2.78rem;
     }
     .hp_descr {
       font-size: 1rem;
