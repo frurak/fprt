@@ -54,31 +54,9 @@ export default new Vuex.Store({
         document.querySelector("body").style.overflow = "hidden";
 
         // Add/remove nav links class
-        navLinks.forEach((link, index) => {
-          if (index === 0) {
-            link.classList.add("route_link-active");
-            link.style.animationDelay = "0.18s";
-          }
-          if (index === 2) {
-            link.classList.add("route_link-active");
-            link.style.animationDelay = "0.20s";
-          }
-          if (index === 3) {
-            link.classList.add("route_link-active");
-            link.style.animationDelay = "0.22s";
-          }
-          if (index === 4) {
-            link.classList.add("route_link-active");
-            link.style.animationDelay = "0.24s";
-          }
-          if (index === 5) {
-            link.classList.add("route_link-active");
-            link.style.animationDelay = "0.26s";
-          }
-          if (index === 7) {
-            link.classList.add("route_link-active");
-            link.style.animationDelay = "0.28s";
-          }
+        navLinks.forEach((link) => {
+          link.classList.add("route_link-active");
+          link.style.animationDelay = "0.18s";
         })
       } else {
         state.navActive = false;
