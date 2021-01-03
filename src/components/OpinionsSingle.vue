@@ -3,7 +3,7 @@
   <div class="opinion_single_container">
     <div class="opinions_overlay">
       <div class="opinion">
-        <div class="opinion_author" @click="nextOpinion()">Krzysztof</div>
+        <div class="opinion_author">Krzysztof</div>
         <h4 class="author_descr">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
           gravida, justo id tempus viverra, risus eros tempus libero, vestibulum
@@ -30,7 +30,7 @@
         class="opinions_nav_btn"
         v-for="(opinion, index) in opinions.length"
         :key="opinion.id"
-        @click="nextOpinion(opinion)"
+        @click="nextOpinion(opinion), realignOpinionsTop()"
         :class="index === 0 ? 'opinions_nav_btn-active' : ''"
       ></span>
     </div>
@@ -128,6 +128,18 @@ export default {
           opinion.classList.add("opinions_nav_btn-active");
         }
       });
+    },
+    // scroll back to top after opinions navigation click
+    realignOpinionsTop() {
+      const header = document.querySelector(".opinions_header");
+
+      setTimeout(() => {
+        window.scrollTo({
+          left: 0,
+          top: header.offsetTop,
+          behavior: "smooth"
+        });
+      }, 100);
     }
   }
 };
