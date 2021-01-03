@@ -183,7 +183,6 @@ $blue: #5f76b5;
         @include flex(center, space-between);
         flex-direction: column;
         z-index: 299;
-        margin-top: 35%;
         .route_link {
           color: $dark;
           list-style: none;
@@ -207,7 +206,7 @@ $blue: #5f76b5;
         width: 100%;
         height: auto;
         font-size: 0.8rem;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
         h1 {
           color: $dark;
           text-transform: uppercase;
@@ -294,7 +293,7 @@ $blue: #5f76b5;
         width: 100%;
         height: auto;
         font-size: 1rem;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
         h1 {
           color: $dark;
           text-transform: uppercase;
@@ -381,7 +380,7 @@ $blue: #5f76b5;
         width: 100%;
         height: auto;
         font-size: 1rem;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
         h1 {
           color: $dark;
           text-transform: uppercase;
@@ -468,7 +467,7 @@ $blue: #5f76b5;
         width: 100%;
         height: auto;
         font-size: 1rem;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         h1 {
           color: $dark;
           text-transform: uppercase;
@@ -555,7 +554,7 @@ $blue: #5f76b5;
         width: 100%;
         height: auto;
         font-size: 1.2rem;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         h1 {
           color: $dark;
           text-transform: uppercase;
