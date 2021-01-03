@@ -12,6 +12,7 @@
       </h4>
     </div>
     <CoachesBoxes />
+    <CoachInfo v-if="ps || mm || rk" />
     <Cross style="right:42%;top:6%;" id="cross7" />
     <Cross style="right:15%;top:20%;" id="cross8" />
   </div>
@@ -20,12 +21,18 @@
 <script>
 import CoachesBoxes from "@/components/CoachesBoxes.vue";
 import Cross from "@/components/Cross.vue";
+import CoachInfo from "@/components/CoachInfo.vue";
+import { mapState } from "vuex";
 
 export default {
   name: "Coaches",
   components: {
     CoachesBoxes,
-    Cross
+    Cross,
+    CoachInfo
+  },
+  computed: {
+    ...mapState(["ps", "mm", "rk"])
   }
 };
 </script>

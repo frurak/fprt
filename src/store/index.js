@@ -8,7 +8,10 @@ export default new Vuex.Store({
   state: {
     toggleMouseover: false,
     navActive: false,
-    appCreated: false
+    appCreated: false,
+    ps: false,
+    mm: false,
+    rk: false
   },
   mutations: {
     isAppCreated(state) {
@@ -22,7 +25,6 @@ export default new Vuex.Store({
       const toggleBot = document.getElementById("toggleline-bot");
       const nav = document.querySelector(".nav");
       const navBlur = document.querySelector(".nav_bg_blur");
-      const navLinks = document.querySelectorAll(".nav_links_container .route_link");
       const mediaMobile = window.matchMedia("(max-width: 767px)");
       const mediaXLandscape = window.matchMedia("(min-width: 768px) and (max-width: 991px) and (orientation: landscape)");
       const mediaiPadLandscape = window.matchMedia("(min-device-width: 992px) and (max-device-width: 1199px) and (orientation: landscape)");
@@ -52,12 +54,6 @@ export default new Vuex.Store({
         navBlur.style.opacity = "1";
         navBlur.style.transition = "0.1s ease-in-out";
         document.querySelector("body").style.overflow = "hidden";
-
-        // Add/remove nav links class
-        navLinks.forEach((link) => {
-          link.classList.add("route_link-active");
-          link.style.animationDelay = "0.18s";
-        })
       } else {
         state.navActive = false;
 
@@ -83,11 +79,33 @@ export default new Vuex.Store({
         navBlur.style.opacity = "0";
         navBlur.style.transition = "0.1s ease-in-out";
         document.querySelector("body").style.overflow = "";
-
-        // Add/remove nav links class
-        navLinks.forEach((link) => {
-          link.classList.remove("route_link-active");
-        })
+      }
+    },
+    open_ps(state) {
+      if (state.ps === false) {
+        state.ps = true;
+        document.querySelector("body").style.overflow = "hidden";
+      } else {
+        state.ps = false;
+        document.querySelector("body").style.overflow = "";
+      }
+    },
+    open_mm(state) {
+      if (state.mm === false) {
+        state.mm = true;
+        document.querySelector("body").style.overflow = "hidden";
+      } else {
+        state.mm = false;
+        document.querySelector("body").style.overflow = "";
+      }
+    },
+    open_rk(state) {
+      if (state.rk === false) {
+        state.rk = true;
+        document.querySelector("body").style.overflow = "hidden";
+      } else {
+        state.rk = false;
+        document.querySelector("body").style.overflow = "";
       }
     }
   },

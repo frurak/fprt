@@ -10,7 +10,7 @@
         <div class="box_fg"></div>
         <div class="coach_text">
           <h1 class="coach_name">Maciej Małecki</h1>
-          <p class="coach_more_info">Więcej informacji</p>
+          <p class="coach_more_info" @click="open_mm()">Więcej informacji</p>
         </div>
       </div>
     </div>
@@ -24,7 +24,7 @@
         <div class="box_fg"></div>
         <div class="coach_text">
           <h1 class="coach_name">Piotr Strzelecki</h1>
-          <p class="coach_more_info">Więcej informacji</p>
+          <p class="coach_more_info" @click="open_ps()">Więcej informacji</p>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@
         <div class="box_fg"></div>
         <div class="coach_text">
           <h1 class="coach_name">Rafał Krzeszewski</h1>
-          <p class="coach_more_info">Więcej informacji</p>
+          <p class="coach_more_info" @click="open_rk()">Więcej informacji</p>
         </div>
       </div>
     </div>
@@ -46,8 +46,16 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from "vuex";
+
 export default {
-  name: "CoachesBoxes"
+  name: "CoachesBoxes",
+  computed: {
+    ...mapState(["ps", "mm", "rk"])
+  },
+  methods: {
+    ...mapMutations(["open_ps", "open_mm", "open_rk"])
+  }
 };
 </script>
 
