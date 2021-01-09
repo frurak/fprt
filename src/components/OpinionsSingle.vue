@@ -132,14 +132,17 @@ export default {
     // scroll back to top after opinions navigation click
     realignOpinionsTop() {
       const header = document.querySelector(".opinions_header");
+      const desktopMedia = window.matchMedia("(max-width: 1199px)");
 
-      setTimeout(() => {
-        window.scrollTo({
-          left: 0,
-          top: header.offsetTop,
-          behavior: "smooth"
-        });
-      }, 100);
+      if (desktopMedia.matches) {
+        setTimeout(() => {
+          window.scrollTo({
+            left: 0,
+            top: header.offsetTop,
+            behavior: "smooth"
+          });
+        }, 100);
+      }
     }
   }
 };

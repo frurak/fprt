@@ -1,47 +1,8 @@
 <template>
   <div id="app">
-    <HomepageTopbar />
-    <HomepageMainText />
-    <div class="homepage_banner">
-      <img src="@/assets/fprt-main-baner.jpg" alt="ForPro Running Team" />
-    </div>
-    <Cross style="right:59%;top:10.5%;" id="cross1" />
-    <Cross style="right:49%;top:30.5%;" id="cross2" />
-    <Navigation />
-    <AboutTeam />
-    <Coaches />
-    <Opinions />
-    <Schedule />
-    <Footer />
     <router-view />
   </div>
 </template>
-
-<script>
-import HomepageTopbar from "@/components/HomepageTopbar.vue";
-import HomepageMainText from "@/components/HomepageMainText.vue";
-import Cross from "@/components/Cross.vue";
-import Navigation from "@/components/Navigation.vue";
-import AboutTeam from "@/components/AboutTeam.vue";
-import Coaches from "@/components/Coaches.vue";
-import Opinions from "@/components/Opinions.vue";
-import Schedule from "@/components/Schedule.vue";
-import Footer from "@/components/Footer.vue";
-
-export default {
-  components: {
-    HomepageTopbar,
-    HomepageMainText,
-    Cross,
-    Navigation,
-    AboutTeam,
-    Coaches,
-    Opinions,
-    Schedule,
-    Footer
-  }
-};
-</script>
 
 <style lang="scss">
 $dark: #09070d;
@@ -66,12 +27,12 @@ $blue: #5f76b5;
 }
 
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   background: $dark;
 }
 
 #app {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   .homepage_banner {
     width: 66vw;
     height: auto;

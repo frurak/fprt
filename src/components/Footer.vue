@@ -8,7 +8,9 @@
         </p>
         <div class="links_overlay">
           <ul class="footer_links links_main links1">
-            <li class="footer_link">Regulamin treingów</li>
+            <router-link class="footer_link terms_link" to="/regulamin"
+              ><p @click="scrollToTerms()">Regulamin treningów</p></router-link
+            >
             <li class="footer_link">Najczęściej zadawane pytania</li>
             <li class="footer_link">Korzyści z członkostwa</li>
           </ul>
@@ -21,12 +23,24 @@
         </p>
         <div class="links_overlay">
           <ul class="footer_links links_main links2">
-            <li class="footer_link">ForPro</li>
-            <li class="footer_link">Polar</li>
-            <li class="footer_link">BlackRoll</li>
-            <li class="footer_link">Royal Wilanów</li>
-            <li class="footer_link">4SL - For Sport Lab</li>
-            <li class="footer_link">Magnesia</li>
+            <a href="https://www.forpro.pl/" target="_blank"
+              ><li class="footer_link">ForPro</li></a
+            >
+            <a href="https://www.polar.com/pl" target="_blank"
+              ><li class="footer_link">Polar</li></a
+            >
+            <a href="https://blackroll.com.pl/" target="_blank"
+              ><li class="footer_link">BlackRoll</li></a
+            >
+            <a href="http://royal-wilanow.pl/" target="_blank"
+              ><li class="footer_link">Royal Wilanów</li></a
+            >
+            <a href="https://4sportlab.pl/" target="_blank"
+              ><li class="footer_link">4SL - For Sport Lab</li></a
+            >
+            <a href="https://www.magnesia.pl/" target="_blank"
+              ><li class="footer_link">Magnesia</li></a
+            >
           </ul>
         </div>
       </div>
@@ -94,6 +108,7 @@
 </template>
 
 <script>
+import { mapMutations } from "vuex";
 export default {
   name: "Footer",
   data() {
@@ -104,6 +119,7 @@ export default {
     };
   },
   methods: {
+    ...mapMutations(["scrollToTerms"]),
     openSection1() {
       const arrow1 = document.querySelector(".arrow1");
       const links1 = document.querySelector(".links1");
@@ -266,6 +282,12 @@ $grey: #8a8a8a;
             font-size: 0.9rem;
             cursor: pointer;
             margin: 5px 0;
+          }
+          a {
+            text-decoration: none;
+          }
+          p {
+            color: $grey;
           }
         }
       }

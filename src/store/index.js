@@ -11,7 +11,9 @@ export default new Vuex.Store({
     appCreated: false,
     ps: false,
     mm: false,
-    rk: false
+    rk: false,
+    termsNum: [0, 1, 2, 3, 4, 5],
+    isTermRoute: false
   },
   mutations: {
     isAppCreated(state) {
@@ -49,6 +51,9 @@ export default new Vuex.Store({
         nav.classList.add("nav-active");
         nav.classList.remove("nav-inactive");
 
+        // remove pointer-events: none
+        document.querySelector(".nav_container").style.pointerEvents = "all";
+
         // Add/remove background blur styling
         navBlur.style.display = "block";
         navBlur.style.opacity = "1";
@@ -73,6 +78,9 @@ export default new Vuex.Store({
         // Add/remove white nav backgroung class
         nav.classList.remove("nav-active");
         nav.classList.add("nav-inactive");
+
+        // add pointer-events: none
+        document.querySelector(".nav_container").style.pointerEvents = "none";
 
         // Add/remove background blur styling
         navBlur.style.display = "none";
@@ -107,6 +115,29 @@ export default new Vuex.Store({
         state.rk = false;
         document.querySelector("body").style.overflow = "";
       }
+    },
+    btnClick(state) {
+      // check if current route is '/regulamin'
+      if (state.isTermRoute === true) {
+        const termsContainer = document.querySelector(".terms_conditions_container");
+        // mainTextBtn click will trigger scroll event
+        window.scrollTo({
+          left: 0,
+          top: termsContainer.offsetTop,
+          behavior: "smooth"
+        });
+        
+      }
+    },
+    scrollToTerms() {
+      setTimeout(() => {
+        // '/regulamin' route click in footer will trigger scroll to top of page event
+        window.scrollTo({
+          left: 0,
+          top: document.querySelector("body").offsetTop,
+          behavior: "smooth"
+        });
+      }, 0);
     }
   },
   actions: {},

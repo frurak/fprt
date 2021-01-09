@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Events from "../views/Events.vue";
+import Terms from "../views/Terms.vue";
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,11 @@ const routes = [
     path: "/wydarzenia",
     name: "Events",
     component: Events
+  },
+  {
+    path: "/regulamin",
+    name: "Terms",
+    component: Terms
   }
 ];
 

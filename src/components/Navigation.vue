@@ -8,9 +8,9 @@
             >Strona&nbsp;główna</router-link
           >
         </li>
-        <li class="route_link">O&nbsp;nas</li>
-        <li class="route_link">Trenerzy</li>
-        <li class="route_link">Opinie</li>
+        <li class="route_link" @click="scrollToAboutSection()">O&nbsp;nas</li>
+        <li class="route_link" @click="scrollToCoachesSection()">Trenerzy</li>
+        <li class="route_link" @click="scrollToOpinionsSection()">Opinie</li>
         <li class="route_link">
           <router-link class="route_link" to="/harmonogram"
             >Harmonogram&nbsp;treningów</router-link
@@ -43,7 +43,70 @@ export default {
     ...mapState(["navActive"])
   },
   methods: {
-    ...mapMutations(["isNavActive"])
+    ...mapMutations(["isNavActive"]),
+    scrollToAboutSection() {
+      // check if user is on '/regulamin' route
+      if (this.$store.state.isTermRoute === true) {
+        // change route to '/' (home)
+        this.$router.push("/");
+        // ...then
+      }
+
+      // scroll to proper section
+      setTimeout(() => {
+        console.log("set time out");
+        window.scrollTo({
+          left: 0,
+          top: document.querySelector(".about_container").offsetTop, //about us section
+          behavior: "smooth"
+        });
+      });
+
+      // trigger nav function (to close the nav properly)
+      this.$store.commit("isNavActive");
+    },
+    scrollToCoachesSection() {
+      // check if user is on '/regulamin' route
+      if (this.$store.state.isTermRoute === true) {
+        // change route to '/' (home)
+        this.$router.push("/");
+        // ...then
+      }
+
+      // scroll to proper section
+      setTimeout(() => {
+        console.log("set time out");
+        window.scrollTo({
+          left: 0,
+          top: document.querySelector(".coaches_container").offsetTop, //coaches section
+          behavior: "smooth"
+        });
+      });
+
+      // trigger nav function (to close the nav properly)
+      this.$store.commit("isNavActive");
+    },
+    scrollToOpinionsSection() {
+      // check if user is on '/regulamin' route
+      if (this.$store.state.isTermRoute === true) {
+        // change route to '/' (home)
+        this.$router.push("/");
+        // ...then
+      }
+
+      // scroll to proper section
+      setTimeout(() => {
+        console.log("set time out");
+        window.scrollTo({
+          left: 0,
+          top: document.querySelector(".opinions_container").offsetTop, //opinions section
+          behavior: "smooth"
+        });
+      });
+
+      // trigger nav function (to close the nav properly)
+      this.$store.commit("isNavActive");
+    }
   }
 };
 </script>
@@ -65,6 +128,7 @@ $blue: #5f76b5;
   position: absolute;
   top: 0;
   right: 0;
+  pointer-events: none;
   .nav_bg_blur {
     position: fixed;
     top: 0;

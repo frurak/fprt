@@ -1,39 +1,39 @@
 <template>
   <div class="hp_maintext_container">
     <h3 class="hp_maintext" :class="appCreated ? 'hp_maintext-active' : ''">
-      Nie biegamy a trenujemy
+      {{ main1 }}
       <br />
-      Już dziś dołącz do pro-amatorów
+      {{ main2 }}
     </h3>
     <h1 class="hp_descr" :class="appCreated ? 'hp_descr-active' : ''">
-      ForPro Running Team to zapał i&nbsp;entuzjazm bijący od sportowców
+      {{ sub1 }}
       <br id="mt_br" />
-      chcących poprawiać swoje wyniki sportowe.
+      {{ sub2 }}
     </h1>
-    <ButtonBig
-      btntext="Dołącz do drużyny"
-      class="hp_btn"
+    <div
+      class="button_big hp_btn"
       :class="appCreated ? 'hp_btn-active' : ''"
-    />
+      @click="btnClick()"
+    >
+      {{ mainbtntext }}
+    </div>
   </div>
 </template>
 
 <script>
-import ButtonBig from "@/components/ButtonBig.vue";
 import { mapState, mapMutations } from "vuex";
 
 export default {
   name: "HomepageMainText",
-  components: {
-    ButtonBig
-  },
+  props: ["main1", "main2", "sub1", "sub2", "mainbtntext"],
   computed: {
-    ...mapState(["appCreated"]),
-    ...mapMutations(["isAppCreated"])
+    ...mapState(["appCreated"])
+  },
+  methods: {
+    ...mapMutations(["isAppCreated", "btnClick"])
   },
   created() {
     this.$store.commit("isAppCreated");
-    console.log(this.$store.state.appCreated);
   }
 };
 </script>
