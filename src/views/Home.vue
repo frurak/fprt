@@ -50,9 +50,10 @@ export default {
   created() {
     if (this.$router.currentRoute.path === "/") {
       // remove '/regulamin' route boolean variable when '/' is active
+      this.$store.state.isHomeRoute = true;
       this.$store.state.isTermRoute = false;
+      this.$store.state.isFAQRoute = false;
     }
-    console.log(this.$store.state.isTermRoute);
   }
 };
 </script>

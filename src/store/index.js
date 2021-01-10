@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import Vue from "vue";
 import Vuex from "vuex";
+import faqJSON from "@/json/faq.json";
 
 Vue.use(Vuex);
 
@@ -13,7 +14,10 @@ export default new Vuex.Store({
     mm: false,
     rk: false,
     termsNum: [0, 1, 2, 3, 4, 5],
-    isTermRoute: false
+    isHomeRoute: false,
+    isTermRoute: false,
+    isFAQRoute: false,
+    faq: faqJSON
   },
   mutations: {
     isAppCreated(state) {
@@ -126,7 +130,26 @@ export default new Vuex.Store({
           top: termsContainer.offsetTop,
           behavior: "smooth"
         });
-        
+      }
+      // check if current route is '/pomoc'
+      if (state.isFAQRoute === true) {
+        const faqContainer = document.querySelector(".faq_content_container");
+        // mainTextBtn click will trigger scroll event
+        window.scrollTo({
+          left: 0,
+          top: faqContainer.offsetTop,
+          behavior: "smooth"
+        });
+      }
+      // check if current route is '/'
+      if (state.isHomeRoute === true) {
+        const aboutContainer = document.querySelector(".about_container");
+        // mainTextBtn click will trigger scroll event
+        window.scrollTo({
+          left: 0,
+          top: aboutContainer.offsetTop,
+          behavior: "smooth"
+        });
       }
     },
     scrollToTerms() {
@@ -138,6 +161,31 @@ export default new Vuex.Store({
           behavior: "smooth"
         });
       }, 0);
+    },
+    scrollToHelp() {
+      setTimeout(() => {
+        // '/pomoc' route click in footer will trigger scroll to top of page event
+        window.scrollTo({
+          left: 0,
+          top: document.querySelector("body").offsetTop,
+          behavior: "smooth"
+        });
+      }, 0);
+    },
+    filterFaqQuestions(state) {
+      let searchInput = document.getElementById("faq-search");
+      let searchValue = searchInput.value.toUpperCase();
+      const question = document.querySelectorAll(".faq_content .faq_content_overlay");
+
+      for (let i = 0; i <= state.faq.length - 1; i++) {
+        // console.log(state.faq[i].q);
+        if (state.faq[i].q.toUpperCase().indexOf(searchValue) > -1 || state.faq[i].content.toUpperCase().indexOf(searchValue) > -1) {
+          question[i].style.display = "";
+        } else {
+          question[i].style.display = "none";
+        }
+      }
+
     }
   },
   actions: {},

@@ -1,0 +1,26 @@
+[
+    {
+        "q": "Czy treningi są darmowe?",
+        "content": "Lubię biegać --- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor justo ac ex tristique, sit amet iaculis elit dignissim. In vitae sollicitudin lectus. Nulla feugiat mauris quis dapibus lobortis. Nullam iaculis mauris vel metus rhoncus, non pellentesque nisl consequat. Vestibulum tempor felis nec metus sollicitudin, quis tristique augue eleifend. Proin et sem vestibulum, congue nulla in, dapibus est. Donec id lobortis quam, sit amet venenatis sem. Morbi venenatis molestie nisi at auctor."
+    },
+    {
+        "q": "Inne przykładowe pytanie?",
+        "content": "Lubię jeść pizzę --- Phasellus vestibulum enim a lacus efficitur, sed bibendum tortor pellentesque. Vestibulum maximus dui euismod, porta diam ut, accumsan massa. Integer scelerisque, augue eget dapibus tempor, ante leo faucibus nunc, quis egestas mi libero vitae orci. In dignissim accumsan finibus. Curabitur maximus, enim nec blandit ornare, neque elit ultricies felis, vel vehicula elit ligula vitae nunc. Ut non nibh blandit odio gravida ullamcorper."
+    },
+    {
+        "q": "Gdzie odbywają się treningi?",
+        "content": "Jakiś przykładowy tekst --- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor justo ac ex tristique, sit amet iaculis elit dignissim. In vitae sollicitudin lectus. Nulla feugiat mauris quis dapibus lobortis. Nullam iaculis mauris vel metus rhoncus."
+    },
+    {
+        "q": "Czy trenerzy posiadaja kwalifikacje?",
+        "content": "Lubię jeździć na rowerze --- Fusce non justo eu sapien imperdiet rhoncus. Phasellus laoreet tincidunt quam, rhoncus aliquam erat tempor et. Duis sit amet tincidunt turpis, eget euismod tortor."
+    },
+    {
+        "q": "Kto jest organizatorem?",
+        "content": "Lubię biegać i grać w piłkę. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor justo ac ex tristique, sit amet iaculis elit dignissim."
+    },
+    {
+        "q": "Od kiedy funkcjonuje grupa?",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor justo ac ex tristique, sit amet iaculis elit dignissim. In vitae sollicitudin lectus. Nulla feugiat mauris quis dapibus lobortis. Nullam iaculis mauris vel metus rhoncus, non pellentesque nisl consequat. Vestibulum tempor felis nec metus sollicitudin, quis tristique augue eleifend. Proin et sem vestibulum, congue nulla in, dapibus est. Donec id lobortis quam, sit amet venenatis sem. Morbi venenatis molestie nisi at auctor."
+    }
+]

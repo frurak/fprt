@@ -45,8 +45,8 @@ export default {
   methods: {
     ...mapMutations(["isNavActive"]),
     scrollToAboutSection() {
-      // check if user is on '/regulamin' route
-      if (this.$store.state.isTermRoute === true) {
+      // check if user is on '/regulamin' or '/pomoc' route
+      if (this.$store.state.isTermRoute === true || this.$store.state.isFAQRoute === true) {
         // change route to '/' (home)
         this.$router.push("/");
         // ...then
@@ -66,8 +66,8 @@ export default {
       this.$store.commit("isNavActive");
     },
     scrollToCoachesSection() {
-      // check if user is on '/regulamin' route
-      if (this.$store.state.isTermRoute === true) {
+      // check if user is on '/regulamin' or '/pomoc' route
+      if (this.$store.state.isTermRoute === true || this.$store.state.isFAQRoute === true) {
         // change route to '/' (home)
         this.$router.push("/");
         // ...then
@@ -87,8 +87,8 @@ export default {
       this.$store.commit("isNavActive");
     },
     scrollToOpinionsSection() {
-      // check if user is on '/regulamin' route
-      if (this.$store.state.isTermRoute === true) {
+      // check if user is on '/regulamin' or '/pomoc' route
+      if (this.$store.state.isTermRoute === true || this.$store.state.isFAQRoute === true) {
         // change route to '/' (home)
         this.$router.push("/");
         // ...then

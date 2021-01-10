@@ -11,7 +11,11 @@
             <router-link class="footer_link terms_link" to="/regulamin"
               ><p @click="scrollToTerms()">Regulamin treningów</p></router-link
             >
-            <li class="footer_link">Najczęściej zadawane pytania</li>
+            <router-link class="footer_link terms_link" to="/pomoc"
+              ><p @click="scrollToHelp()">
+                Najczęściej zadawane pytania
+              </p></router-link
+            >
             <li class="footer_link">Korzyści z członkostwa</li>
           </ul>
         </div>
@@ -119,7 +123,7 @@ export default {
     };
   },
   methods: {
-    ...mapMutations(["scrollToTerms"]),
+    ...mapMutations(["scrollToTerms", "scrollToHelp"]),
     openSection1() {
       const arrow1 = document.querySelector(".arrow1");
       const links1 = document.querySelector(".links1");

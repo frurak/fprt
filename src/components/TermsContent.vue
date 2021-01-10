@@ -775,6 +775,9 @@ $grey: #8a8a8a;
 @media only screen and (min-device-width: 992px) and (max-device-width: 1199px) and (orientation: landscape) {
 }
 
+// --------------------------------------------------- KEYFRAMES ANIMATIONS ---------------------------------------------------
+// --------------------------------------------------- JAVASCRIPT CLASSES -----------------------------------------------------
+
 .single_term_name-active {
   position: fixed !important;
   left: 50%;

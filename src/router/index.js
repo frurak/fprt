@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Events from "../views/Events.vue";
 import Terms from "../views/Terms.vue";
+import FAQ from "../views/FAQ.vue";
 
 Vue.use(VueRouter);
 
@@ -30,6 +31,11 @@ const routes = [
     path: "/regulamin",
     name: "Terms",
     component: Terms
+  },
+  {
+    path: "/pomoc",
+    name: "FAQ",
+    component: FAQ
   }
 ];
 

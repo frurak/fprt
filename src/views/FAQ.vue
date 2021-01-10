@@ -1,20 +1,20 @@
 <template>
-  <div class="terms_container">
+  <div class="faq_container">
     <HomepageTopbar />
     <HomepageMainText
-      main1="Regulamin treningów"
-      main2="dla członków grupy"
-      sub1="Zależy nam aby każde wspólne spotkanie przebiegało zgodnie"
-      sub2="z zasadami sportowej rywalizacji :)"
+      main1="Odpowiedzi na najczęściej"
+      main2="zadawane pytania"
+      sub1="Przygotowaliśmy dla Ciebie specjalne podsumowanie z pytaniami"
+      sub2="najczęściej zadawanymi przez naszych zawodników"
       mainbtntext="Czytaj"
     />
     <div class="homepage_banner">
-      <img src="@/assets/terms-banner.jpg" alt="ForPro Running Team" />
+      <img src="@/assets/faq-banner.jpg" alt="ForPro Running Team" />
     </div>
     <Cross style="right:59%;top:10.5%;" id="cross1" />
     <Cross style="right:49%;top:30.5%;" id="cross2" />
     <Navigation />
-    <TermsContent />
+    <FAQContent />
     <Footer />
   </div>
 </template>
@@ -23,26 +23,25 @@
 import HomepageTopbar from "@/components/HomepageTopbar.vue";
 import HomepageMainText from "@/components/HomepageMainText.vue";
 import Navigation from "@/components/Navigation.vue";
-import TermsContent from "@/components/TermsContent.vue";
+import FAQContent from "@/components/FAQContent.vue";
 import Cross from "@/components/Cross.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "Terms",
-  props: ["mainbtntext"],
+  name: "FAQ",
   components: {
     HomepageTopbar,
     Navigation,
     HomepageMainText,
     Cross,
-    TermsContent,
+    FAQContent,
     Footer
   },
   created() {
-    if (this.$router.currentRoute.path === "/regulamin") {
-      this.$store.state.isTermRoute = true;
-      this.$store.state.isFAQRoute = false;
+    if (this.$router.currentRoute.path === "/pomoc") {
+      this.$store.state.isFAQRoute = true;
       this.$store.state.isHomeRoute = false;
+      this.$store.state.isTermRoute = false;
     }
   }
 };
@@ -57,10 +56,5 @@ $grey: #8a8a8a;
   display: flex;
   align-items: $al;
   justify-content: $ju;
-}
-
-.terms_container {
-  width: 100%;
-  min-height: 100vh;
 }
 </style>
