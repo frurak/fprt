@@ -183,6 +183,16 @@ export default new Vuex.Store({
         });
       }, 0);
     },
+    scrollTopInScheduleRoute() {
+      setTimeout(() => {
+        // '/harmonogram' route click in footer will trigger scroll to top of page event
+        window.scrollTo({
+          left: 0,
+          top: document.querySelector("body").offsetTop,
+          behavior: "smooth"
+        });
+      }, 0);
+    },
     scrollTopFromFooter() {
       // scroll to top when user clicks "Strona główna" in footer section
       window.scrollTo({

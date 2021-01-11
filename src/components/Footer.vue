@@ -69,9 +69,11 @@
             <li class="footer_link" @click="scrollToOpinionsSection()">
               Opinie
             </li>
-            <router-link class="footer_link" to="/harmonogram"
-              >Harmonogram treningów</router-link
-            >
+            <li class="route_link" @click="scrollTopInScheduleRoute()">
+              <router-link class="footer_link" to="/harmonogram"
+                >Harmonogram treningów</router-link
+              >
+            </li>
             <router-link class="footer_link" to="/wydarzenia"
               >Wydarzenia</router-link
             >
@@ -136,7 +138,8 @@ export default {
     ...mapMutations([
       "scrollTopInTermsRoute",
       "scrollTopInHelpRoute",
-      "scrollTopFromFooter"
+      "scrollTopFromFooter",
+      "scrollTopInScheduleRoute"
     ]),
     openSection1() {
       const arrow1 = document.querySelector(".arrow1");

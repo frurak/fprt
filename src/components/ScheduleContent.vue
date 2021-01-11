@@ -172,4 +172,417 @@ $grey: #8a8a8a;
     }
   }
 }
+
+// ------------------------------------------------------- MEDIA QUERIES -------------------------------------------------------
+
+@media only screen and (max-width: 413px) {
+  .schedule_content_container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 5rem 4vw;
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    .img_info_container {
+      width: 100%;
+      height: auto;
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+      .current_date {
+        @include flex(center, flex-start);
+        padding-bottom: 1.3rem;
+        p {
+          margin-left: 15px;
+          text-transform: uppercase;
+          color: $blue;
+          font-weight: 800;
+          letter-spacing: 5px;
+          font-family: "Red Hat Display", sans-serif;
+        }
+      }
+      .more_info_content {
+        @include flex(flex-start, flex-start);
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        .type {
+          width: 100%;
+          height: 50%;
+          @include flex(flex-start, flex-start);
+          flex-direction: column;
+          padding: 1.3rem 0 1.3rem 0;
+          &:nth-last-child(1) {
+            padding: 0 0 1.3rem 0;
+          }
+        }
+        .name {
+          text-transform: uppercase;
+          font-family: "Red Hat Display", sans-serif;
+          color: $blue;
+          font-weight: 800;
+          letter-spacing: 5px;
+        }
+        .description {
+          color: $grey;
+        }
+      }
+      .other_details {
+        color: $grey;
+        padding: 1.3rem 0 1.3rem 0;
+      }
+      a,
+      span {
+        color: $grey;
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    .img_container {
+      width: 100%;
+      height: auto;
+      @include flex(center, center);
+      background: $grey;
+      .img_schedule {
+        width: 100%;
+        background: 2px solid #fff;
+        cursor: zoom-in;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 575px) {
+  .schedule_content_container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 5rem 4vw;
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    .img_info_container {
+      width: 100%;
+      height: auto;
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+      .current_date {
+        @include flex(center, flex-start);
+        padding-bottom: 1.3rem;
+        p {
+          margin-left: 15px;
+          text-transform: uppercase;
+          color: $blue;
+          font-weight: 800;
+          letter-spacing: 5px;
+          font-family: "Red Hat Display", sans-serif;
+        }
+      }
+      .more_info_content {
+        @include flex(flex-start, flex-start);
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        .type {
+          width: 100%;
+          height: 50%;
+          @include flex(flex-start, flex-start);
+          flex-direction: column;
+          padding: 1.3rem 0 1.3rem 0;
+          &:nth-last-child(1) {
+            padding: 0 0 1.3rem 0;
+          }
+        }
+        .name {
+          text-transform: uppercase;
+          font-family: "Red Hat Display", sans-serif;
+          color: $blue;
+          font-weight: 800;
+          letter-spacing: 5px;
+        }
+        .description {
+          color: $grey;
+        }
+      }
+      .other_details {
+        color: $grey;
+        padding: 1.3rem 0 1.3rem 0;
+      }
+      a,
+      span {
+        color: $grey;
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    .img_container {
+      width: 100%;
+      height: auto;
+      @include flex(center, center);
+      background: $grey;
+      .img_schedule {
+        width: 100%;
+        background: 2px solid #fff;
+        cursor: zoom-in;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .schedule_content_container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 5rem 4vw;
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    .img_info_container {
+      width: 100%;
+      height: auto;
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+      .current_date {
+        @include flex(center, flex-start);
+        padding-bottom: 1.3rem;
+        p {
+          margin-left: 15px;
+          text-transform: uppercase;
+          color: $blue;
+          font-weight: 800;
+          letter-spacing: 5px;
+          font-family: "Red Hat Display", sans-serif;
+        }
+      }
+      .more_info_content {
+        @include flex(flex-start, flex-start);
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        .type {
+          width: 100%;
+          height: 50%;
+          @include flex(flex-start, flex-start);
+          flex-direction: column;
+          padding: 1.3rem 0 1.3rem 0;
+          &:nth-last-child(1) {
+            padding: 0 0 1.3rem 0;
+          }
+        }
+        .name {
+          text-transform: uppercase;
+          font-family: "Red Hat Display", sans-serif;
+          color: $blue;
+          font-weight: 800;
+          letter-spacing: 5px;
+        }
+        .description {
+          color: $grey;
+        }
+      }
+      .other_details {
+        color: $grey;
+        padding: 1.3rem 0 1.3rem 0;
+      }
+      a,
+      span {
+        color: $grey;
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    .img_container {
+      width: 100%;
+      height: auto;
+      @include flex(center, center);
+      background: $grey;
+      .img_schedule {
+        width: 100%;
+        background: 2px solid #fff;
+        cursor: zoom-in;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .schedule_content_container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 5rem 4vw;
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    .img_info_container {
+      width: 100%;
+      height: auto;
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+      .current_date {
+        @include flex(center, flex-start);
+        padding-bottom: 1.3rem;
+        p {
+          margin-left: 15px;
+          text-transform: uppercase;
+          color: $blue;
+          font-weight: 800;
+          letter-spacing: 5px;
+          font-family: "Red Hat Display", sans-serif;
+        }
+      }
+      .more_info_content {
+        @include flex(flex-start, flex-start);
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        .type {
+          width: 100%;
+          height: 50%;
+          @include flex(flex-start, flex-start);
+          flex-direction: column;
+          padding: 1.3rem 0 1.3rem 0;
+          &:nth-last-child(1) {
+            padding: 0 0 1.3rem 0;
+          }
+        }
+        .name {
+          text-transform: uppercase;
+          font-family: "Red Hat Display", sans-serif;
+          color: $blue;
+          font-weight: 800;
+          letter-spacing: 5px;
+        }
+        .description {
+          color: $grey;
+        }
+      }
+      .other_details {
+        color: $grey;
+        padding: 1.3rem 0 1.3rem 0;
+      }
+      a,
+      span {
+        color: $grey;
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    .img_container {
+      width: 100%;
+      height: auto;
+      @include flex(center, center);
+      background: $grey;
+      .img_schedule {
+        width: 100%;
+        background: 2px solid #fff;
+        cursor: zoom-in;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .schedule_content_container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 5rem 4vw;
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    .img_info_container {
+      width: 100%;
+      height: auto;
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+      .current_date {
+        @include flex(center, flex-start);
+        padding-bottom: 1.3rem;
+        p {
+          margin-left: 15px;
+          text-transform: uppercase;
+          color: $blue;
+          font-weight: 800;
+          letter-spacing: 5px;
+          font-family: "Red Hat Display", sans-serif;
+        }
+      }
+      .more_info_content {
+        @include flex(flex-start, flex-start);
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        .type {
+          width: 100%;
+          height: 50%;
+          @include flex(flex-start, flex-start);
+          flex-direction: column;
+          padding: 1.3rem 0 1.3rem 0;
+          &:nth-last-child(1) {
+            padding: 0 0 1.3rem 0;
+          }
+        }
+        .name {
+          text-transform: uppercase;
+          font-family: "Red Hat Display", sans-serif;
+          color: $blue;
+          font-weight: 800;
+          letter-spacing: 5px;
+        }
+        .description {
+          color: $grey;
+        }
+      }
+      .other_details {
+        color: $grey;
+        padding: 1.3rem 0 1.3rem 0;
+      }
+      a,
+      span {
+        color: $grey;
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    .img_container {
+      width: 100%;
+      height: auto;
+      @include flex(center, center);
+      background: $grey;
+      .img_schedule {
+        width: 100%;
+        background: 2px solid #fff;
+        cursor: zoom-in;
+      }
+    }
+  }
+}
+
+//iPhone 5, 5S, 5C, 5SE LANDSCAPE
+@media screen and (min-width: 414px) and (max-width: 575px) and (orientation: landscape) {
+}
+
+//iPhone 6, 6S, 7, 8, X LANDSCAPE
+@media screen and (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+}
+
+//iPhone X LANDSCAPE
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+}
+
+//iPad LANDSCAPE
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) and (orientation: landscape) {
+}
 </style>

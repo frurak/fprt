@@ -277,11 +277,11 @@ $blue: #5f76b5;
   }
   #cross1 {
     right: 58% !important;
-    top: 12% !important;
+    top: 5% !important;
   }
   #cross2 {
-    right: 33% !important;
-    top: 18% !important;
+    right: 40% !important;
+    top: 12% !important;
   }
   #cross3 {
     right: 30% !important;

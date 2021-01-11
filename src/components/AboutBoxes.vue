@@ -574,6 +574,7 @@ $blue: #5f76b5;
         min-height: 400px;
         object-fit: cover;
         object-position: center;
+        z-index: -2;
       }
       .img_fg {
         position: absolute;
@@ -581,7 +582,7 @@ $blue: #5f76b5;
         bottom: 0;
         width: 100%;
         height: 100%;
-        z-index: 20;
+        z-index: -1 !important;
         background: linear-gradient(
           0deg,
           rgba(34, 40, 64, 1),

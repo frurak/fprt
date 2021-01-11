@@ -182,7 +182,7 @@ $blue: #5f76b5;
   .hp_maintext_container {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 20%;
     width: auto;
     min-height: 20%;
     margin: 0 4vw;

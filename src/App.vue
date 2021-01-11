@@ -119,14 +119,15 @@ body {
   #app {
     .homepage_banner {
       width: 100vw;
-      height: 100vh;
+      min-height: 50vh;
+      height: auto;
       transform: translateX(0%);
       z-index: -1;
       overflow: hidden;
       img {
         width: 100% !important;
         height: auto !important;
-        transform: translateX(-15%);
+        transform: translateX(0%) !important;
       }
     }
   }
