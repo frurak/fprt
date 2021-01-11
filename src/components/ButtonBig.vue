@@ -31,11 +31,11 @@ export default {
             });
           }
           if (index === 2) {
-            // window.scrollTo({
-            //   left: 0,
-            //   top: coachesSection.offsetTop,
-            //   behavior: "smooth"
-            // });
+            this.$router.push("/harmonogram");
+            window.scrollTo({
+              left: 0,
+              top: document.querySelector("body").offsetTop
+            });
           }
         }
       });

@@ -59,7 +59,9 @@
         src="@/assets/Harmonogram-web.jpg"
         alt="Harmomogram treningów ForPro Running Team"
         class="img_schedule"
+        @click="zoomSchedule()"
       />
+      <div class="close_img" @click="zoomSchedule()">+</div>
     </div>
   </div>
 </template>
@@ -67,6 +69,11 @@
 <script>
 export default {
   name: "ScheduleContent",
+  data() {
+    return {
+      imageOpen: false
+    };
+  },
   methods: {
     moveToCoachesSection() {
       // change route
@@ -81,6 +88,26 @@ export default {
         });
       });
       this.$store.state.isScheduleRoute = false;
+    },
+    zoomSchedule() {
+      const image = document.querySelector(".img_container");
+      const closeBtn = document.querySelector(".close_img");
+      const mediaMin1199 = window.matchMedia("(min-width: 1199px)");
+      if (!this.imageOpen) {
+        if (mediaMin1199.matches) {
+          image.classList.add("img-open");
+          setTimeout(() => {
+            closeBtn.style.transform = "translateY(0%) rotate(45deg)";
+          }, 200);
+          this.imageOpen = true;
+        }
+      } else {
+        if (mediaMin1199.matches) {
+          image.classList.remove("img-open");
+          closeBtn.style.transform = "translateY(-200%) rotate(45deg)";
+          this.imageOpen = false;
+        }
+      }
     }
   }
 };
@@ -169,6 +196,54 @@ $grey: #8a8a8a;
       width: 100%;
       background: 2px solid #fff;
       cursor: zoom-in;
+    }
+    .close_img {
+      display: none;
+    }
+  }
+}
+
+// --------------------------------------------------- KEYFRAMES ANIMATIONS ---------------------------------------------------
+// --------------------------------------------------- JAVASCRIPT CLASSES -----------------------------------------------------
+
+.img-open {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(24, 23, 23, 0.88) !important;
+  z-index: 1000;
+  overflow: hidden;
+  .img_schedule {
+    width: 70% !important;
+    border-radius: 12px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.637);
+    cursor: zoom-out !important;
+  }
+  .close_img {
+    content: "+" !important ;
+    width: 50px;
+    height: 50px;
+    background: $blue !important;
+    color: $dark;
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    @include flex(center, center);
+    display: flex !important;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    font-weight: 200;
+    font-family: "Poppins", sans-serif;
+    transform: rotate(45deg) translateY(-200%);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 3px 3px 20px rgba(0, 0, 0, 1);
+      transform: scale(1.1) rotate(45deg);
+      transition: 0.3s ease-in-out;
     }
   }
 }

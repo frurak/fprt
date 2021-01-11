@@ -1,26 +1,62 @@
 [
     {
-        "q": "Czy treningi są darmowe?",
-        "content": "Lubię biegać --- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor justo ac ex tristique, sit amet iaculis elit dignissim. In vitae sollicitudin lectus. Nulla feugiat mauris quis dapibus lobortis. Nullam iaculis mauris vel metus rhoncus, non pellentesque nisl consequat. Vestibulum tempor felis nec metus sollicitudin, quis tristique augue eleifend. Proin et sem vestibulum, congue nulla in, dapibus est. Donec id lobortis quam, sit amet venenatis sem. Morbi venenatis molestie nisi at auctor."
+        "q": "Od kiedy funkcjonuje grupa biegowa?",
+        "content": "Grupa została założona w lutym 2019 roku i dzięki wiedzy i umiejętnościom trenerów szybko zdobyła popularność na biegowej mapie Warszawy. W 2020 plany treningowe pokrzyżowała nam pandemia Covid-19, ale nie poddajemy się mimo niesprzyjających warunków!"
     },
     {
-        "q": "Inne przykładowe pytanie?",
-        "content": "Lubię jeść pizzę --- Phasellus vestibulum enim a lacus efficitur, sed bibendum tortor pellentesque. Vestibulum maximus dui euismod, porta diam ut, accumsan massa. Integer scelerisque, augue eget dapibus tempor, ante leo faucibus nunc, quis egestas mi libero vitae orci. In dignissim accumsan finibus. Curabitur maximus, enim nec blandit ornare, neque elit ultricies felis, vel vehicula elit ligula vitae nunc. Ut non nibh blandit odio gravida ullamcorper."
+        "q": "Jak mogę się zapisać na zajęcia?",
+        "content": "Nie musisz zapisywać się na nasze zajęcia. Spotkania są otwarte dla każdego biegacza i biegaczki, niezależnie od poziomu zaawansowania sportowego. Harmonogram treningów znajdziesz na stronie www.forprorunningteam.pl/harmonogram oraz na naszym Facebooku."
+    },
+    {
+        "q": "Czy treningi są darmowe?",
+        "content": "Jak najbardziej, wszystkie nasze cotygodniowe spotkania są bezpłatne dla uczestników. Jeżeli natomiast jesteś zainteresowany bądź zainteresowana dodatkowym, indywidualnym tokiem trenerskim pod opieką jednego z naszych trenerów, skontaktuj się z nim bezpośrednio i zapytaj o dodatkowe koszty."
     },
     {
         "q": "Gdzie odbywają się treningi?",
-        "content": "Jakiś przykładowy tekst --- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor justo ac ex tristique, sit amet iaculis elit dignissim. In vitae sollicitudin lectus. Nulla feugiat mauris quis dapibus lobortis. Nullam iaculis mauris vel metus rhoncus."
+        "content": "Nasze wspólne spotkania odbywają się w Warszawie, w kilku różnych lokalizacjach. Treningi prowadzimy na stadionie na Agrykoli, na terenie Parku Łazienki w Warszawie, w okolicach salonu stacjonarnego Nike ForPro przy ul. Klimczaka 1 na Wilanowie, oraz z innych miejscach przyjaznym biegaczom. O miejscu każdego z treningów dowiedzieć się możesz z harmonogramu dostępnego na stronie internetowej oraz na naszym Facebooku."
     },
     {
-        "q": "Czy trenerzy posiadaja kwalifikacje?",
-        "content": "Lubię jeździć na rowerze --- Fusce non justo eu sapien imperdiet rhoncus. Phasellus laoreet tincidunt quam, rhoncus aliquam erat tempor et. Duis sit amet tincidunt turpis, eget euismod tortor."
+        "q": "Kto jest organizatorem treningów?",
+        "content": "Organizatorem treningów jest firma ForPro (www.forpro.pl)."
     },
     {
-        "q": "Kto jest organizatorem?",
-        "content": "Lubię biegać i grać w piłkę. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor justo ac ex tristique, sit amet iaculis elit dignissim."
+        "q": "Kto jest trenerem grupy?",
+        "content": "Zajęcia biegowe oraz indywidualne plany zawodników prowadzi trzech wykwalifikowanych trenerów: Piotr Strzelecki, Maciej Małecki oraz Rafał Krzeszewski. Wszyscy od lat związani z marką ForPro."
     },
     {
-        "q": "Od kiedy funkcjonuje grupa?",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor justo ac ex tristique, sit amet iaculis elit dignissim. In vitae sollicitudin lectus. Nulla feugiat mauris quis dapibus lobortis. Nullam iaculis mauris vel metus rhoncus, non pellentesque nisl consequat. Vestibulum tempor felis nec metus sollicitudin, quis tristique augue eleifend. Proin et sem vestibulum, congue nulla in, dapibus est. Donec id lobortis quam, sit amet venenatis sem. Morbi venenatis molestie nisi at auctor."
+        "q": "Jak mogę skontaktować się z trenerami?",
+        "content": "Jeżeli masz jakieś pytania, które bezpośrednio chciałbyś/chciałabyś zadać naszemu trenerowi, napisz do niego na Instagramie bądź Facebooku lub napisz maila na adres runningteam@forpro.pl."
+    },
+    {
+        "q": "Czy treningi odbywają się pomimo pandemii Covid-19?",
+        "content": "Na uwadze mamy przede wszystkim bezpieczeństwo naszych zawodników, własne oraz osób trzecich dlatego treningi organizowane są z zachowaniem wszelkich obowiązujących zasad sanitarnych oraz w ramach aktualnych zasad bezpieczeństwa zawartych w rozporządzeniu Ministerstwa Zdrowia."
+    },
+    {
+        "q": "Jakie wydarzenia organizowane są w ramach grupy ForPro Running Team?",
+        "content": "Jak do tej pory mieliśmy przyjemność organizować wiele różnorodnych wydarzeń, w których uczestniczyły setki biegaczy i biegaczek. Zaliczyć można do nich: Testy Coopera, Bieg na Orientację, Szkolenie z zakresu przygotowania biegowego z Ryszardem Szulem, LightRun – rozświetlony long run z grami terenowymi po najbardziej znanych warszawskich miejscach, Treningi siły biegowej w ExumaGym na Powiślu, Szkolenia z zakresu automasażu BlackRoll, Sztafeta drużynowa na stadionie AWF w Warszawie, … Lista jest długa ale staramy się by była jeszcze dłuższa ;) Zachęcamy do obserwowania komunikatów na Facebooku i Instagramie grupy."
+    },
+    {
+        "q": "Jaka jest frekwencja na treningach?",
+        "content": "W zależności od rodzaju i przeznaczenia treningu na nasze zajęcia uczęszcza od 10 do 40 osób. W dobie pandemii Covid-19 mamy na uwadze obowiązujące obostrzenia, dlatego treningi odbywać się będą w ramach dopuszczalnej frekwencji lub zostaną przeniesione do sfery online."
+    },
+    {
+        "q": "Co to są Challenge?",
+        "content": "Challenge to nazwa własna pod którą kryje się nic innego jak zadanie do samodzielnego wykonania przez zawodnika. Pełen harmonogram Challenge’y znajdziesz na stronie internetowej w części „harmonogram treningów” oraz na naszym Facebooku. Zachęcamy do dzielenia się wrażeniami z innymi zawodnikami po ukończonym treningu na naszych mediach społecznościowych. ;)"
+    },
+    {
+        "q": "Czy treningi podzielone są według poziomów zaawansowania zawodników?",
+        "content": "Mamy na uwadze, że osoby uczęszczające na nasze zajęcia są aktualnie na różnym poziomie zaawansowania sportowego dlatego grupowe treningi jak i Challenge (zadania do samodzielnego wykonania) przygotowywane są w minimum dwóch różnych wersjach. Jeżeli natomiast masz wątpliwości czy zdołasz uczestniczyć w treningach i realizować plan, powiadom o tym trenera, który postara się dostosować jedną z wersji do Twoich potrzeb."
+    },
+    {
+        "q": "W jakich godzinach organizowane są treningi grupowe?",
+        "content": "Treningi przeważnie rozpoczynamy w godzinach popołudniowo-wieczornych tj. najczęściej o 19.00 w wybranej lokalizacji. Godziny treningów mogą ulec zmianie dlatego zachęcamy do śledzenia komunikatów."
+    },
+    {
+        "q": "Gdzie znajdę regulamin treningów?",
+        "content": "Regulamin Treningów znajdziesz pod adresem www.forprorunningteam.pl/regulamin. Polityka Prywatności Organizatora dostępna jest na stronie www.forpro.pl."
+    },
+    {
+        "q": "Nie znalazłem odpowiedzi na swoje pytanie.",
+        "content": "To nic. ;) Jeżeli nurtują Cię pytania, na które odpowiedzi nie znalazłeś/znalazłaś w tej części to napisz do nas na Facebooku, Instagramie lub mailowo na adres runningteam@forpro.pl. Postaramy się rozwiać wszelkie wątpliwości."
     }
 ]

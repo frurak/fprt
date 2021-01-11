@@ -51,7 +51,11 @@ export default {
     },
     scrollToAboutSection() {
       // check if user is on '/regulamin' or '/pomoc' or '/harmonogram' route
-      if (this.$store.state.isTermRoute === true || this.$store.state.isFAQRoute === true || this.$store.state.isScheduleRoute === true) {
+      if (
+        this.$store.state.isTermRoute === true ||
+        this.$store.state.isFAQRoute === true ||
+        this.$store.state.isScheduleRoute === true
+      ) {
         // change route to '/' (home)
         this.$router.push("/");
         // ...then
@@ -71,7 +75,11 @@ export default {
     },
     scrollToCoachesSection() {
       // check if user is on '/regulamin' or '/pomoc' or '/harmonogram' route
-      if (this.$store.state.isTermRoute === true || this.$store.state.isFAQRoute === true || this.$store.state.isScheduleRoute === true) {
+      if (
+        this.$store.state.isTermRoute === true ||
+        this.$store.state.isFAQRoute === true ||
+        this.$store.state.isScheduleRoute === true
+      ) {
         // change route to '/' (home)
         this.$router.push("/");
         // ...then
@@ -91,7 +99,11 @@ export default {
     },
     scrollToOpinionsSection() {
       // check if user is on '/regulamin' or '/pomoc' or '/harmonogram' route
-      if (this.$store.state.isTermRoute === true || this.$store.state.isFAQRoute === true || this.$store.state.isScheduleRoute === true) {
+      if (
+        this.$store.state.isTermRoute === true ||
+        this.$store.state.isFAQRoute === true ||
+        this.$store.state.isScheduleRoute === true
+      ) {
         // change route to '/' (home)
         this.$router.push("/");
         // ...then
