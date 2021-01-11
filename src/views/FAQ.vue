@@ -42,6 +42,7 @@ export default {
       this.$store.state.isFAQRoute = true;
       this.$store.state.isHomeRoute = false;
       this.$store.state.isTermRoute = false;
+      this.$store.state.isScheduleRoute = false;
     }
   }
 };

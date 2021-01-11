@@ -9,10 +9,12 @@
         <div class="links_overlay">
           <ul class="footer_links links_main links1">
             <router-link class="footer_link terms_link" to="/regulamin"
-              ><p @click="scrollToTerms()">Regulamin treningów</p></router-link
+              ><p @click="scrollTopInTermsRoute()">
+                Regulamin treningów
+              </p></router-link
             >
             <router-link class="footer_link terms_link" to="/pomoc"
-              ><p @click="scrollToHelp()">
+              ><p @click="scrollTopInHelpRoute()">
                 Najczęściej zadawane pytania
               </p></router-link
             >
@@ -55,10 +57,18 @@
         </p>
         <div class="links_overlay">
           <ul class="footer_links links_main links3">
-            <router-link class="footer_link" to="/">Strona główna</router-link>
-            <li class="footer_link">O nas</li>
-            <li class="footer_link">Trenerzy</li>
-            <li class="footer_link">Opinie</li>
+            <li class="route_link" @click="scrollTopFromFooter()">
+              <router-link class="footer_link" to="/"
+                >Strona główna</router-link
+              >
+            </li>
+            <li class="footer_link" @click="scrollToAboutSection()">O nas</li>
+            <li class="footer_link" @click="scrollToCoachesSection()">
+              Trenerzy
+            </li>
+            <li class="footer_link" @click="scrollToOpinionsSection()">
+              Opinie
+            </li>
             <router-link class="footer_link" to="/harmonogram"
               >Harmonogram treningów</router-link
             >
@@ -123,7 +133,11 @@ export default {
     };
   },
   methods: {
-    ...mapMutations(["scrollToTerms", "scrollToHelp"]),
+    ...mapMutations([
+      "scrollTopInTermsRoute",
+      "scrollTopInHelpRoute",
+      "scrollTopFromFooter"
+    ]),
     openSection1() {
       const arrow1 = document.querySelector(".arrow1");
       const links1 = document.querySelector(".links1");
@@ -213,6 +227,66 @@ export default {
           this.linksOpen3 = false;
         }
       }
+    },
+    scrollToAboutSection() {
+      // check if user is on '/regulamin' or '/pomoc' route
+      if (
+        this.$store.state.isTermRoute === true ||
+        this.$store.state.isFAQRoute === true
+      ) {
+        // change route to '/' (home)
+        this.$router.push("/");
+        // ...then
+      }
+
+      // scroll to proper section
+      setTimeout(() => {
+        window.scrollTo({
+          left: 0,
+          top: document.querySelector(".about_container").offsetTop, //about us section
+          behavior: "smooth"
+        });
+      });
+    },
+    scrollToCoachesSection() {
+      // check if user is on '/regulamin' or '/pomoc' route
+      if (
+        this.$store.state.isTermRoute === true ||
+        this.$store.state.isFAQRoute === true
+      ) {
+        // change route to '/' (home)
+        this.$router.push("/");
+        // ...then
+      }
+
+      // scroll to proper section
+      setTimeout(() => {
+        window.scrollTo({
+          left: 0,
+          top: document.querySelector(".coaches_container").offsetTop, //coaches section
+          behavior: "smooth"
+        });
+      });
+    },
+    scrollToOpinionsSection() {
+      // check if user is on '/regulamin' or '/pomoc' route
+      if (
+        this.$store.state.isTermRoute === true ||
+        this.$store.state.isFAQRoute === true
+      ) {
+        // change route to '/' (home)
+        this.$router.push("/");
+        // ...then
+      }
+
+      // scroll to proper section
+      setTimeout(() => {
+        window.scrollTo({
+          left: 0,
+          top: document.querySelector(".opinions_container").offsetTop, //opinions section
+          behavior: "smooth"
+        });
+      });
     }
   }
 };

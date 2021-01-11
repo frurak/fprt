@@ -3,7 +3,7 @@
     <div class="nav_bg_blur" @click="isNavActive()"></div>
     <div class="nav">
       <ul class="nav_links_container">
-        <li class="route_link">
+        <li class="route_link" @click="removeNav()">
           <router-link class="route_link" to="/"
             >Strona&nbsp;główna</router-link
           >
@@ -11,7 +11,7 @@
         <li class="route_link" @click="scrollToAboutSection()">O&nbsp;nas</li>
         <li class="route_link" @click="scrollToCoachesSection()">Trenerzy</li>
         <li class="route_link" @click="scrollToOpinionsSection()">Opinie</li>
-        <li class="route_link">
+        <li class="route_link" @click="removeNav()">
           <router-link class="route_link" to="/harmonogram"
             >Harmonogram&nbsp;treningów</router-link
           >
@@ -44,6 +44,11 @@ export default {
   },
   methods: {
     ...mapMutations(["isNavActive"]),
+    removeNav() {
+      // trigger nav function (to close the nav properly)
+      // when user navigates to '/' from main menu in '/pomoc' or '/regulamin'
+      this.$store.commit("isNavActive");
+    },
     scrollToAboutSection() {
       // check if user is on '/regulamin' or '/pomoc' route
       if (this.$store.state.isTermRoute === true || this.$store.state.isFAQRoute === true) {
@@ -54,7 +59,6 @@ export default {
 
       // scroll to proper section
       setTimeout(() => {
-        console.log("set time out");
         window.scrollTo({
           left: 0,
           top: document.querySelector(".about_container").offsetTop, //about us section
@@ -75,7 +79,6 @@ export default {
 
       // scroll to proper section
       setTimeout(() => {
-        console.log("set time out");
         window.scrollTo({
           left: 0,
           top: document.querySelector(".coaches_container").offsetTop, //coaches section
@@ -96,7 +99,6 @@ export default {
 
       // scroll to proper section
       setTimeout(() => {
-        console.log("set time out");
         window.scrollTo({
           left: 0,
           top: document.querySelector(".opinions_container").offsetTop, //opinions section

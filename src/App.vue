@@ -124,8 +124,8 @@ body {
       z-index: -1;
       overflow: hidden;
       img {
-        width: auto;
-        height: 100%;
+        width: 100% !important;
+        height: auto !important;
         transform: translateX(-15%);
       }
     }
@@ -141,7 +141,6 @@ body {
       transform: translateX(0%);
       z-index: -1;
       overflow: hidden;
-      background: red;
       img {
         width: auto;
         height: 100%;
@@ -160,7 +159,6 @@ body {
       transform: translateX(0%);
       z-index: -1;
       overflow: hidden;
-      background: red;
       img {
         width: auto;
         height: 120%;
@@ -179,7 +177,6 @@ body {
       transform: translateX(0%);
       z-index: -1;
       overflow: hidden;
-      background: red;
       img {
         width: auto;
         height: 100%;
@@ -198,7 +195,6 @@ body {
       transform: translateX(0%);
       z-index: -1;
       overflow: hidden;
-      background: red;
       img {
         width: auto;
         height: 100%;

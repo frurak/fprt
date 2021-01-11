@@ -30,7 +30,7 @@
         Trenuj w gronie ludzi z pasją, dzielących się zróżnicowaną wiedzą,
         doświadczeniem i własnymi pomysłami.
       </div>
-      <ButtonBig btntext="Przyjdź na trening" class="box_btn" />
+      <ButtonBig btntext="Czytaj opinie" class="box_btn" />
     </div>
     <div class="experience_box">
       <div class="box_image_overlay">

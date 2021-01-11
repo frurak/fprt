@@ -60,8 +60,8 @@
             >
             <br />
             <br />
-            Tak pisze o sobie Maciek znany jako Runner 2.5.🏃‍♂️, trener z którym
-            możliwość spotkania będziesz miał/miała na wspólnych spotkaniach.
+            Tak pisze o sobie Maciek, trener z którym możliwość spotkania
+            będziesz miał/miała na wspólnych spotkaniach.
             <br />
             <br />
             Od ponad 15 lat uprawia najróżniejsze dyscypliny sportu, w tym: -
@@ -103,26 +103,24 @@
         <div class="coach_info">
           <div class="coach_info_overlay">
             <span class="info_quote"
-              >„Sport towarzyszy mi od zawsze i jest dla mnie pasją w pełni tego
-              słowa znaczeniu”</span
+              >„Moje motto życiowe: IMPOSSIBLE IS NOTHING. Tylko ciężką pracą
+              możesz osiągnąć wszystko o czym tylko marzysz. ”</span
             >
             <br />
             <br />
-            Od ponad 15 lat uprawia najróżniejsze dyscypliny sportu, w tym: -
-            sztuki walki (brązowy medal Pucharu Polski muay thai) - zapasy
-            (mistrzostwo Polski w zapasach z elementami grapplingu do 80 kg) -
-            sporty wytrzymałościowo-siłowe, crossfit endurance, ćwiczenia
-            ogólnorozwojowe - bieganie, w którym rekordy to 5km - 17:04, 10km -
-            35:48, HM - 1:17:13, M - 2:48:33
+            22-krotny medalista Mistrzostw Polski, Rekordzista Polski,
+            reprezentant kraju na Mistrzostwach Europy juniorów w lekkoatletyce.
             <br />
             <br />
-            <span class="info_quote"
-              >„Poza aspektami często sportowymi, bardzo cenię sobie ludzi.
-              Lubię dzielić się swoim doświadczeniem i pomagać innym w
-              osiągnięciu celów sportowych. Dlatego zapraszam Cię na wspólny
-              trening, będziemy się świetnie bawić i na pewno wykonamy kawał
-              mocnej roboty!”</span
-            >
+            Instruktor kulturystyki i licencjonowany trener lekkoatletyki. W
+            przeszłości koordynator treningów ORLEN Warsaw Marathon. Jego
+            rekordy życiowe to:
+            <br />
+            5km – 16:18
+            <br />
+            10km – 33:38
+            <br />
+            HM – 1:17:31
           </div>
         </div>
         <ButtonBig

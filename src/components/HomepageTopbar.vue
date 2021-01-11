@@ -1,14 +1,20 @@
 <template>
   <div class="topbar_container">
     <div class="tbr_leftside">
-      <img
-        src="@/assets/fprt_logo_wht.svg"
-        alt="ForPro Running Team logo"
-        class="tbr_logo"
-      />
+      <a href="http://forprorunningteam.pl/"
+        ><img
+          src="@/assets/fprt_logo_wht.svg"
+          alt="ForPro Running Team logo"
+          class="tbr_logo"
+        />
+      </a>
       <div class="tbr_socials">
-        <img src="@/assets/facebook-app-symbol.svg" class="socials_fb" />
-        <img src="@/assets/instagram.svg" class="socials_ig" />
+        <a href="https://www.facebook.com/forprorunningteam" target="_blank"
+          ><img src="@/assets/facebook-app-symbol.svg" class="socials_fb"
+        /></a>
+        <a href="https://www.instagram.com/forprorunningteam/" target="_blank"
+          ><img src="@/assets/instagram.svg" class="socials_ig"
+        /></a>
       </div>
     </div>
     <div class="tbr_rightside">
@@ -73,13 +79,17 @@ $blue: #5f76b5;
       height: 100%;
       @include flex(center, space-between);
       padding: 0 1%;
-      .socials_fb {
-        height: 17%;
-        cursor: pointer;
-      }
-      .socials_ig {
-        height: 17%;
-        cursor: pointer;
+      a {
+        height: 15%;
+        width: auto;
+        .socials_fb {
+          height: 100%;
+          cursor: pointer;
+        }
+        .socials_ig {
+          height: 100%;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -154,14 +164,18 @@ $blue: #5f76b5;
         @include flex(center, flex-end);
         padding: 0;
         margin-right: 4vw;
-        .socials_fb {
+        a {
           height: 25%;
-          cursor: pointer;
-          margin-right: 4vw;
-        }
-        .socials_ig {
-          height: 25%;
-          cursor: pointer;
+          width: auto;
+          .socials_fb {
+            height: 100%;
+            cursor: pointer;
+            margin-right: 4vw;
+          }
+          .socials_ig {
+            height: 100%;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -235,14 +249,18 @@ $blue: #5f76b5;
         @include flex(center, flex-end);
         padding: 0;
         margin-right: 4vw;
-        .socials_fb {
+        a {
           height: 25%;
-          cursor: pointer;
-          margin-right: 4vw;
-        }
-        .socials_ig {
-          height: 25%;
-          cursor: pointer;
+          width: auto;
+          .socials_fb {
+            height: 100%;
+            cursor: pointer;
+            margin-right: 4vw;
+          }
+          .socials_ig {
+            height: 100%;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -316,14 +334,18 @@ $blue: #5f76b5;
         @include flex(center, flex-end);
         padding: 0;
         margin-right: 4vw;
-        .socials_fb {
+        a {
           height: 25%;
-          cursor: pointer;
-          margin-right: 4vw;
-        }
-        .socials_ig {
-          height: 25%;
-          cursor: pointer;
+          width: auto;
+          .socials_fb {
+            height: 100%;
+            cursor: pointer;
+            margin-right: 4vw;
+          }
+          .socials_ig {
+            height: 100%;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -389,7 +411,7 @@ $blue: #5f76b5;
       padding-right: 6vw;
       z-index: 1;
       .tbr_logo {
-        width: 25%;
+        width: 35%;
       }
       .tbr_socials {
         width: auto;
@@ -397,14 +419,18 @@ $blue: #5f76b5;
         @include flex(center, flex-end);
         padding: 0;
         margin-right: 4vw;
-        .socials_fb {
+        a {
           height: 25%;
-          cursor: pointer;
-          margin-right: 6vw;
-        }
-        .socials_ig {
-          height: 25%;
-          cursor: pointer;
+          width: auto;
+          .socials_fb {
+            height: 100%;
+            cursor: pointer;
+            margin-right: 6vw;
+          }
+          .socials_ig {
+            height: 100%;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -470,7 +496,7 @@ $blue: #5f76b5;
       padding-right: 4vw;
       z-index: 1;
       .tbr_logo {
-        width: 20%;
+        width: 30%;
       }
       .tbr_socials {
         width: auto;
@@ -478,14 +504,18 @@ $blue: #5f76b5;
         @include flex(center, flex-end);
         padding: 0;
         margin-right: 4vw;
-        .socials_fb {
+        a {
           height: 20%;
-          cursor: pointer;
-          margin-right: 4vw;
-        }
-        .socials_ig {
-          height: 20%;
-          cursor: pointer;
+          width: auto;
+          .socials_fb {
+            height: 100%;
+            cursor: pointer;
+            margin-right: 4vw;
+          }
+          .socials_ig {
+            height: 100%;
+            cursor: pointer;
+          }
         }
       }
     }

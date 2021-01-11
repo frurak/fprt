@@ -1,5 +1,5 @@
 <template>
-  <div class="button_big">{{ btntext }}</div>
+  <div class="button_big" @click="aboutButtonsClick()">{{ btntext }}</div>
 </template>
 
 <script>
@@ -7,6 +7,39 @@ export default {
   name: "ButtonBig",
   props: {
     btntext: String
+  },
+  methods: {
+    aboutButtonsClick() {
+      const buttons = document.querySelectorAll(".about_container .box_btn");
+      const coachesSection = document.querySelector(".coaches_container");
+      const opinionsSection = document.querySelector(".opinions_container");
+
+      buttons.forEach((button, index) => {
+        if (button.innerHTML === this.btntext) {
+          if (index === 0) {
+            window.scrollTo({
+              left: 0,
+              top: coachesSection.offsetTop,
+              behavior: "smooth"
+            });
+          }
+          if (index === 1) {
+            window.scrollTo({
+              left: 0,
+              top: opinionsSection.offsetTop,
+              behavior: "smooth"
+            });
+          }
+          if (index === 2) {
+            // window.scrollTo({
+            //   left: 0,
+            //   top: coachesSection.offsetTop,
+            //   behavior: "smooth"
+            // });
+          }
+        }
+      });
+    }
   }
 };
 </script>

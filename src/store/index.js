@@ -17,6 +17,7 @@ export default new Vuex.Store({
     isHomeRoute: false,
     isTermRoute: false,
     isFAQRoute: false,
+    isScheduleRoute: false,
     faq: faqJSON
   },
   mutations: {
@@ -151,8 +152,18 @@ export default new Vuex.Store({
           behavior: "smooth"
         });
       }
+      // check if current route is '/harmonogram'
+      if (state.isScheduleRoute === true) {
+        const scheduleContainer = document.querySelector(".schedule_content_container");
+        // mainTextBtn click will trigger scroll event
+        window.scrollTo({
+          left: 0,
+          top: scheduleContainer.offsetTop,
+          behavior: "smooth"
+        });
+      }
     },
-    scrollToTerms() {
+    scrollTopInTermsRoute() {
       setTimeout(() => {
         // '/regulamin' route click in footer will trigger scroll to top of page event
         window.scrollTo({
@@ -162,7 +173,7 @@ export default new Vuex.Store({
         });
       }, 0);
     },
-    scrollToHelp() {
+    scrollTopInHelpRoute() {
       setTimeout(() => {
         // '/pomoc' route click in footer will trigger scroll to top of page event
         window.scrollTo({
@@ -171,6 +182,13 @@ export default new Vuex.Store({
           behavior: "smooth"
         });
       }, 0);
+    },
+    scrollTopFromFooter() {
+      // scroll to top when user clicks "Strona główna" in footer section
+      window.scrollTo({
+        left: 0,
+        top: document.querySelector("body").offsetTop
+      });
     },
     filterFaqQuestions(state) {
       let searchInput = document.getElementById("faq-search");
