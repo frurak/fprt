@@ -235,7 +235,8 @@ export default {
       // check if user is on '/regulamin' or '/pomoc' route
       if (
         this.$store.state.isTermRoute === true ||
-        this.$store.state.isFAQRoute === true
+        this.$store.state.isFAQRoute === true ||
+        this.$store.state.isScheduleRoute === true
       ) {
         // change route to '/' (home)
         this.$router.push("/");
@@ -255,7 +256,8 @@ export default {
       // check if user is on '/regulamin' or '/pomoc' route
       if (
         this.$store.state.isTermRoute === true ||
-        this.$store.state.isFAQRoute === true
+        this.$store.state.isFAQRoute === true ||
+        this.$store.state.isScheduleRoute === true
       ) {
         // change route to '/' (home)
         this.$router.push("/");
@@ -275,7 +277,8 @@ export default {
       // check if user is on '/regulamin' or '/pomoc' route
       if (
         this.$store.state.isTermRoute === true ||
-        this.$store.state.isFAQRoute === true
+        this.$store.state.isFAQRoute === true ||
+        this.$store.state.isScheduleRoute === true
       ) {
         // change route to '/' (home)
         this.$router.push("/");
